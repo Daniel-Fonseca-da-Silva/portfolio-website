@@ -1,3 +1,4 @@
+import Banner from "@/components/Banner";
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
 import RightSide from "@/components/RightSide";
@@ -24,7 +25,15 @@ export default function Home() {
           >
             <LeftSide />
           </motion.div>
-          <div className="h-[88vh] mx-auto p-4">Middle</div>
+          <div className="h-[88vh] w-full mx-auto p-4">
+            <Banner />
+            {/* About */}
+            {/* Experience */}
+            {/* Projects */}
+            {/* Archive */}
+            {/* Contact */}
+            {/* Footer */}
+          </div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
