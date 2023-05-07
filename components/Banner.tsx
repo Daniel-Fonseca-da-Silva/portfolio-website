@@ -12,7 +12,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-lg font-titleFont tracking-wide text-textGreen"
       >
-        Olá, meu nome é
+        Hi, I am 
       </motion.h3>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
@@ -22,7 +22,7 @@ const Banner = () => {
       >
         Daniel Fonseca.{" "}
         <span className="text-textDark mt-2 lgl:mt-4 text-4xl">
-          Inovação e comprometimento.
+          Innovation and commitment.
         </span>
       </motion.h1>
       <motion.p
@@ -32,13 +32,10 @@ const Banner = () => {
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
         {" "}
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-        exercitationem corrupti accusantium pariatur delectus repudiandae
-        similique vitae sint! Autem esse beatae quia corporis voluptate
-        recusandae earum laudantium sit minima ad.{" "}
+       I am a highly skilled developer with over 5 years of experience in both back-end and front-end development, and I have a wide range of skills in different programming technologies. I have in-depth knowledge of programming languages such as Java and TypeScript, and frameworks such as Spring, Angular, Next, and NestJS.{" "}
         <a href="https://github.com/Daniel-Fonseca-da-Silva" target="_blank">
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-hidden group">
-            Saiba Mais
+            Know More
             <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
           </span>
         </a>
@@ -49,7 +46,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.9 }}
         className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
       >
-        Confira minha empresa!
+        Check my company!
       </motion.button>
     </section>
   );
