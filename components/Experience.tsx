@@ -65,31 +65,51 @@ const Experience = () => {
             <ul className="md:w-32 flex flex-col">
               <li
                 onClick={handleDafon}
-                className="border-l-2 border-l-hoverColor text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                className={`${
+                  workDafon
+                    ? "border-l-textGreen text-textGreen"
+                    : "border-l-hoverColor text-textDark"
+                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
                 Dafon
               </li>
               <li
                 onClick={handleEquiplano}
-                className="border-l-2 border-l-hoverColor text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                className={`${
+                  workEquiplano
+                    ? "border-l-textGreen text-textGreen"
+                    : "border-l-hoverColor text-textDark"
+                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
                 Equiplano
               </li>
               <li
                 onClick={handleExosfera}
-                className="border-l-2 border-l-hoverColor text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                className={`${
+                  workExosfera
+                    ? "border-l-textGreen text-textGreen"
+                    : "border-l-hoverColor text-textDark"
+                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
                 Exosfera
               </li>
               <li
                 onClick={handleMzTech}
-                className="border-l-2 border-l-hoverColor text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                className={`${
+                  workMzTech
+                    ? "border-l-textGreen text-textGreen"
+                    : "border-l-hoverColor text-textDark"
+                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
                 MzTech
               </li>
               <li
                 onClick={handleWlabs}
-                className="border-l-2 border-l-hoverColor text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium"
+                className={`${
+                  workWlabs
+                    ? "border-l-textGreen text-textGreen"
+                    : "border-l-hoverColor text-textDark"
+                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
                 WLabs
               </li>
