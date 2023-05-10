@@ -12,7 +12,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-lg font-titleFont tracking-wide text-textGreen"
       >
-        Hi, I am 
+        Hi, I am
       </motion.h3>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
@@ -32,7 +32,11 @@ const Banner = () => {
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
         {" "}
-       I am a highly skilled developer with over 5 years of experience in both back-end and front-end development, and I have a wide range of skills in different programming technologies. I have in-depth knowledge of programming languages such as Java and TypeScript, and frameworks such as Spring, Angular, Next, and NestJS.{" "}
+        I am a highly skilled developer with over 5 years of experience in both
+        back-end and front-end development, and I have a wide range of skills in
+        different programming technologies. I have in-depth knowledge of
+        programming languages such as Java and TypeScript, and frameworks such
+        as Spring, Angular, Next, and NestJS.{" "}
         <a href="https://github.com/Daniel-Fonseca-da-Silva" target="_blank">
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-hidden group">
             Know More

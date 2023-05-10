@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Archive from "@/components/Archive";
 import Banner from "@/components/Banner";
 import Experience from "@/components/Experience";
 import LeftSide from "@/components/LeftSide";
@@ -33,7 +34,7 @@ export default function Home() {
             <About />
             <Experience />
             <Projects />
-            {/* Archive */}
+            <Archive />
             {/* Contact */}
             {/* Footer */}
           </div>
