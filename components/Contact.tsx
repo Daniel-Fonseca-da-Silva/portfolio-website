@@ -7,11 +7,13 @@ const Contact = () => {
       <p className="font-titleFont text-lg text-textGreen font-semibold flex items-center tracking-wide">
         04. What&apos;s next?
       </p>
-      <h2 className="font-titleFont text-5xl font-semibold">Get In Touch</h2>
+      <h2 className="font-titleFont text-5xl font-semibold">Contact Now</h2>
       <p className="max-w-[600px] text-center text-textDark">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut assumenda
-        qui harum eveniet, laborum est inventore veniam unde ullam? Mollitia est
-        voluptas incidunt maiores? Vel neque beatae rem facere libero!
+        Dafon has a proven track record of delivering exceptional web solutions
+        tailored to the unique needs of our clients. With our expertise in web
+        development, user experience design, and advanced technologies, we have
+        successfully transformed numerous businesses online presence, propelling
+        them to new heights of success.
       </p>
       <a href="mailto:daniel@dafon.dev">
         <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
