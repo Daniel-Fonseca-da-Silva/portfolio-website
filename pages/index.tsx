@@ -8,6 +8,7 @@ import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import RightSide from "@/components/RightSide";
+import SubFooter from "@/components/SubFooter";
 import { motion } from "framer-motion";
 import Head from "next/head";
 
@@ -39,6 +40,7 @@ export default function Home() {
             <Archive />
             <Contact />
             <Footer />
+            <SubFooter />
           </div>
           <motion.div
             initial={{ opacity: 0 }}
