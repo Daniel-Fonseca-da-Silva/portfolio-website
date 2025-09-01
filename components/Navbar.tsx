@@ -16,7 +16,7 @@ import {
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const ref = useRef<string | any>("");
+  const ref = useRef<HTMLDivElement>(null);
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault;
     setShowMenu(false);
@@ -140,7 +140,7 @@ const Navbar = () => {
         </div>
         {showMenu && (
           <div
-            ref={(node) => (ref.current = node)}
+            ref={ref}
             onClick={handleClick}
             className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-center"
           >
