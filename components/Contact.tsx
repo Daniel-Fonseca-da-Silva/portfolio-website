@@ -12,7 +12,7 @@ const Contact = () => {
         I have a proven track record of delivering exceptional software solutions
         tailored to the unique needs of your business. With my expertise in software
         development, cloud architecture, and cutting-edge technologies, I have
-        successfully transformed numerous businesses' digital infrastructure, propelling
+        successfully transformed numerous businesses&apos; digital infrastructure, propelling
         them to new heights of operational excellence and market competitiveness.
       </p>
       <a href="https://wa.me/351913619053" target="_blank">

@@ -29,11 +29,11 @@ const Equiplano = () => {
           </span>
           Key Projects:
 
-          'Conta' (Account) A system for managing permissions for various users and administrators of other systems.
+          &apos;Conta&apos; (Account) A system for managing permissions for various users and administrators of other systems.
 
-          'Almoxarifado' (Warehouse) A system focused on managing supplies and vehicles allocated in warehouses, covering their entire life cycle.
+          &apos;Almoxarifado&apos; (Warehouse) A system focused on managing supplies and vehicles allocated in warehouses, covering their entire life cycle.
 
-          'EProcesso' (E-Process) The company's main system, focused on managing all processes initiated in the city hall, from start to finish.
+          &apos;EProcesso&apos; (E-Process) The company&apos;s main system, focused on managing all processes initiated in the city hall, from start to finish.
         </li>
       </ul>
     </motion.div>

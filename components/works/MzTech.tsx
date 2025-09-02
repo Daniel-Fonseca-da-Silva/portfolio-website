@@ -28,7 +28,7 @@ const MzTech = () => {
             <TbArrowForwardUp />
           </span>
           Key Projects:
-          'Sindical TR' Led the migration of a legacy PHP system to a modern Java/Spring Boot solution syndicate, including development of new feature, implementation of enhanced security measures and ongoing maintenance and post-migration optimization, architecture modernization to microservices.
+          &apos;Sindical TR&apos; Led the migration of a legacy PHP system to a modern Java/Spring Boot solution syndicate, including development of new feature, implementation of enhanced security measures and ongoing maintenance and post-migration optimization, architecture modernization to microservices.
         </li>
       </ul>
     </motion.div>

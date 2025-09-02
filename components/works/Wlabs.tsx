@@ -22,7 +22,7 @@ const Wlabs = () => {
           </span>
           Worked on a startup project developing innovative software similar to Uber for 24-hour terminals in the United States. The system addressed geospatial mapping, passenger location, hotel management, and ticket issuance for various transportation modes.
 
-          I worked with cutting-edge technologies including Node.js with NestJS framework, REST APIs, Jest for testing, AWS microservices, MySQL database, and GraphQL. Despite joining near the project's end, I gained extensive experience with modern technologies.
+          I worked with cutting-edge technologies including Node.js with NestJS framework, REST APIs, Jest for testing, AWS microservices, MySQL database, and GraphQL. Despite joining near the project&apos;s end, I gained extensive experience with modern technologies.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
@@ -30,7 +30,7 @@ const Wlabs = () => {
           </span>
           Key Projects:
 
-          'GeoTicket' - An intelligent and innovative system that enables millions of users to securely and efficiently track their trip statuses and expenses in real time. The platform provides continuous feedback while ensuring high availability, stability, and security at scale.
+          &apos;GeoTicket&apos; - An intelligent and innovative system that enables millions of users to securely and efficiently track their trip statuses and expenses in real time. The platform provides continuous feedback while ensuring high availability, stability, and security at scale.
         </li>
       </ul>
     </motion.div>

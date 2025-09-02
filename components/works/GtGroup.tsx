@@ -33,9 +33,9 @@ const GtGroup = () => {
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          'Nexus' A business management platform that delivers insights into operations, capital investments, and the resources required for strategic company growth.
+          &apos;Nexus&apos; A business management platform that delivers insights into operations, capital investments, and the resources required for strategic company growth.
 
-          'Radar' An AI-powered system designed to help entrepreneurs create tailored business models based on their industry, company size, and target market across various European countries.
+          &apos;Radar&apos; An AI-powered system designed to help entrepreneurs create tailored business models based on their industry, company size, and target market across various European countries.
         </li>
       </ul>
     </motion.div>

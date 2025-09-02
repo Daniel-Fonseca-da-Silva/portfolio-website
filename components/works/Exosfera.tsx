@@ -29,8 +29,8 @@ const Exosfera = () => {
             <TbArrowForwardUp />
           </span>
           Key Projects
-          'El Chaco' AI-powered SaaS for startups to streamline business management and accelerate growth.
-          'Dental Care'  A dental practice platform with 3D modeling for tracking orthodontic progress via photo comparisons.
+          &apos;El Chaco&apos; AI-powered SaaS for startups to streamline business management and accelerate growth.
+          &apos;Dental Care&apos;  A dental practice platform with 3D modeling for tracking orthodontic progress via photo comparisons.
         </li>
       </ul>
     </motion.div>

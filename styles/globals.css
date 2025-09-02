@@ -5,3 +5,31 @@
 .active {
   color: #64ffda
 }
+
+/* Custom scrollbar styles */
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: rgba(136, 146, 176, 0.2);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(136, 146, 176, 0.6);
+  border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 146, 176, 0.8);
+}
+
+/* Hide scrollbar for specific elements */
+.scrollbarHide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbarHide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
