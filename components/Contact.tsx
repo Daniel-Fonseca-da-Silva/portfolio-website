@@ -9,15 +9,15 @@ const Contact = () => {
       </p>
       <h2 className="font-titleFont text-5xl font-semibold">Contact Now</h2>
       <p className="max-w-[600px] text-center text-textDark">
-        Dafon has a proven track record of delivering exceptional web solutions
-        tailored to the unique needs of our clients. With our expertise in web
-        development, user experience design, and advanced technologies, we have
-        successfully transformed numerous businesses online presence, propelling
-        them to new heights of success.
+        I have a proven track record of delivering exceptional software solutions
+        tailored to the unique needs of your business. With my expertise in software
+        development, cloud architecture, and cutting-edge technologies, I have
+        successfully transformed numerous businesses' digital infrastructure, propelling
+        them to new heights of operational excellence and market competitiveness.
       </p>
-      <a href="mailto:daniel@dafon.dev">
+      <a href="https://wa.me/351913619053" target="_blank">
         <button className="w-40 h-14 border border-textGreen mt-6 font-titleFont text-sm text-textGreen tracking-wider rounded-md hover:bg-hoverColor duration-300">
-          Speak With Us
+          Speak With Me
         </button>
       </a>
     </section>

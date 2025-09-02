@@ -1,56 +1,72 @@
 import { useState } from "react";
 import SectiontTitle from "./SectiontTitle";
-import Dafon from "./works/Dafon";
+import GtGroup from "./works/GtGroup";
 import Equiplano from "./works/Equiplano";
 import MzTech from "./works/MzTech";
 import Wlabs from "./works/Wlabs";
 import Exosfera from "./works/Exosfera";
+import LeroyMerlin from "./works/LeroyMerlin";
 
 const Experience = () => {
-  const [workDafon, setWorkDafon] = useState(false);
+  const [workGtGroup, setWorkGtGroup] = useState(false);
   const [workEquiplano, setWorkEquiplano] = useState(false);
   const [workMzTech, setWorkMzTech] = useState(false);
   const [workWlabs, setWorkWlabs] = useState(false);
   const [workExosfera, setWorkExosfera] = useState(false);
+  const [workLeroyMerlin, setWorkLeroyMerlin] = useState(false);
 
-  const handleDafon = () => {
-    setWorkDafon(true);
+  const handleGtGroup = () => {
+    setWorkGtGroup(true);
     setWorkEquiplano(false);
     setWorkMzTech(false);
     setWorkWlabs(false);
     setWorkExosfera(false);
+    setWorkLeroyMerlin(false);
   };
 
   const handleEquiplano = () => {
-    setWorkDafon(false);
+    setWorkGtGroup(false);
     setWorkEquiplano(true);
     setWorkMzTech(false);
     setWorkWlabs(false);
     setWorkExosfera(false);
+    setWorkLeroyMerlin(false);
   };
 
   const handleMzTech = () => {
-    setWorkDafon(false);
+    setWorkGtGroup(false);
     setWorkEquiplano(false);
     setWorkMzTech(true);
     setWorkWlabs(false);
     setWorkExosfera(false);
+    setWorkLeroyMerlin(false);
   };
 
   const handleWlabs = () => {
-    setWorkDafon(false);
+    setWorkGtGroup(false);
     setWorkEquiplano(false);
     setWorkMzTech(false);
     setWorkWlabs(true);
     setWorkExosfera(false);
+    setWorkLeroyMerlin(false);
   };
 
   const handleExosfera = () => {
-    setWorkDafon(false);
+    setWorkGtGroup(false);
     setWorkEquiplano(false);
     setWorkMzTech(false);
     setWorkWlabs(false);
     setWorkExosfera(true);
+    setWorkLeroyMerlin(false);
+  };
+
+  const handleLeroyMerlin = () => {
+    setWorkGtGroup(false);
+    setWorkEquiplano(false);
+    setWorkMzTech(false);
+    setWorkWlabs(false);
+    setWorkExosfera(false);
+    setWorkLeroyMerlin(true);
   };
 
   return (
@@ -64,24 +80,24 @@ const Experience = () => {
           <div className="w-1/2 p-4">
             <ul className="md:w-32 flex flex-col">
               <li
-                onClick={handleDafon}
+                onClick={handleLeroyMerlin}
                 className={`${
-                  workDafon
+                  workLeroyMerlin
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
                 } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
-                Dafon
+                LeroyMerlin
               </li>
               <li
-                onClick={handleEquiplano}
+                onClick={handleGtGroup}
                 className={`${
-                  workEquiplano
+                  workGtGroup
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
                 } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
-                Equiplano
+                GtGroup
               </li>
               <li
                 onClick={handleExosfera}
@@ -94,14 +110,14 @@ const Experience = () => {
                 Exosfera
               </li>
               <li
-                onClick={handleMzTech}
+                onClick={handleEquiplano}
                 className={`${
-                  workMzTech
+                  workEquiplano
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
                 } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
               >
-                MzTech
+                Equiplano
               </li>
               <li
                 onClick={handleWlabs}
@@ -113,14 +129,25 @@ const Experience = () => {
               >
                 WLabs
               </li>
+              <li
+                onClick={handleMzTech}
+                className={`${
+                  workMzTech
+                    ? "border-l-textGreen text-textGreen"
+                    : "border-l-hoverColor text-textDark"
+                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+              >
+                MzTech
+              </li>
             </ul>
           </div>
           <div className="w-1/2 p-4">
-            {workDafon && <Dafon />}
-            {workEquiplano && <Equiplano />}
-            {workMzTech && <MzTech />}
-            {workWlabs && <Wlabs />}
+            {workLeroyMerlin && <LeroyMerlin />}
+            {workGtGroup && <GtGroup />}
             {workExosfera && <Exosfera />}
+            {workEquiplano && <Equiplano />}
+            {workWlabs && <Wlabs />}
+            {workMzTech && <MzTech />}
           </div>
         </div>
       </div>

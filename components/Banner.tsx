@@ -20,9 +20,9 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
-        Daniel Fonseca.{" "}
+        Daniel Fonseca{" "}
         <span className="text-textDark mt-2 lgl:mt-4 text-4xl">
-          Innovation and commitment.
+        Architect Engineer
         </span>
       </motion.h1>
       <motion.p
@@ -32,11 +32,7 @@ const Banner = () => {
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
         {" "}
-        I am a highly skilled developer with over 5 years of experience in both
-        back-end and front-end development, and I have a wide range of skills in
-        different programming technologies. I have in-depth knowledge of
-        programming languages such as Java and TypeScript, and frameworks such
-        as Spring, Angular, Next, and NestJS.{" "}
+        I am an accomplished Software Engineer with over 5 years of experience in designing and delivering scalable, secure, and high-performance cloud applications on AWS. I possess strong expertise in Golang, Java, and TypeScript, and have successfully leveraged frameworks such as Gorm, Spring, Angular, Vue.js, and NestJS to build robust, enterprise-grade solutions. My focus is on creating efficient, maintainable, and resilient systems that drive business value and enhance user experience.{" "}
         <a href="https://github.com/Daniel-Fonseca-da-Silva" target="_blank">
           <span className="text-textGreen inline-flex relative cursor-pointer h-7 overflow-hidden group">
             Know More
@@ -44,14 +40,17 @@ const Banner = () => {
           </span>
         </a>
       </motion.p>
-      <motion.button
+      <motion.a
+        href="http://www.dafon.online"
+        target="_blank"
+        rel="noopener noreferrer"
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.9 }}
-        className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
+        className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300 flex items-center justify-center cursor-pointer"
       >
         Check my company!
-      </motion.button>
+      </motion.a>
     </section>
   );
 };

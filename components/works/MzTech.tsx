@@ -11,24 +11,24 @@ const MzTech = () => {
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
         Back
-        <span className="text-textGreen tracking-wide">@Developer</span>
+        <span className="text-textGreen tracking-wide">Software Developer</span>
       </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">Nov 2021</p>
+      <p className="text-sm mt-1 font-medium text-textDark">Feb 2016 - Oct 2019</p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          I worked at São Paulo-based startup focused on creating software
-          similar to Uber that was designed to be used in 24-hour machines
-          similar to 24-hour ATMs in the United States.
+          As a Back-end Developer at MzTech, I specialized in creating MVP and SaaS software for national and international markets. I worked extensively on a drone surveillance project for the American market, focusing on aerial protection systems.
+
+          My responsibilities included developing and maintaining the back-end layer, ensuring application efficiency and security. I collaborated with Designers and Business Analysts to deliver high-quality solutions that met client requirements.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          This system involved 3D mapping issues via maps of passenger
-          locations, management of railroad, road, air, and sea tickets.
+          Key Projects:
+          'Sindical TR' Led the migration of a legacy PHP system to a modern Java/Spring Boot solution syndicate, including development of new feature, implementation of enhanced security measures and ongoing maintenance and post-migration optimization, architecture modernization to microservices.
         </li>
       </ul>
     </motion.div>

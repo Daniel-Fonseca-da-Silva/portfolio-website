@@ -238,7 +238,7 @@ const Navbar = () => {
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.1, ease: "easeIn" }}
-                    href="https://wa.me/5524981579339"
+                    href="https://wa.me/351913619053"
                     target="_blank"
                   >
                     <span className="mr-1 w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -249,7 +249,7 @@ const Navbar = () => {
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2, ease: "easeIn" }}
-                    href="https://discord.gg/Q7YjW9RY"
+                    href=""
                     target="_blank"
                   >
                     <span className="mr-1 w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -293,7 +293,7 @@ const Navbar = () => {
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.6, ease: "easeIn" }}
-                    href="https://dafon.dev/en/solucoes-english/"
+                    href="http://www.dafon.online/"
                     target="_blank"
                   >
                     <span className="mr-1 w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -305,10 +305,10 @@ const Navbar = () => {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.2, ease: "easeIn" }}
-                  href="mailto:daniel@dafon.dev"
+                  href="mailto:dafondeveloper@gmail.com"
                   className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
                 >
-                  <p>daniel@dafon.dev</p>
+                  <p>dafondeveloper@gmail.com</p>
                 </motion.a>
               </div>
             </motion.div>

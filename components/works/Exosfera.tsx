@@ -11,29 +11,26 @@ const Exosfera = () => {
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
         Partner &
-        <span className="text-textGreen tracking-wide">@Developer</span>
+        <span className="text-textGreen tracking-wide">
+        Software Developer</span>
       </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">Present</p>
+      <p className="text-sm mt-1 font-medium text-textDark">Jan 2023 - Aug 2023</p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          I am a partner in the company Exosfera, which specializes in marketing
-          and e-commerce creation. My main tasks include talking to national and
-          international clients, contacting potential clients, providing support
-          for Brazil, and working as a front-end and back-end developer.
+          With my experience in system development and e-commerce platforms, I played a key role in building and optimizing online stores, integrating payment gateways (including PayPal), and ensuring data security compliance.
+
+          I led MVP development using modern backend technologies, cloud infrastructure, and AI, focusing on scalability and high performance. I also created custom scheduling plugins and implemented efficient APIs for external database communication.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          In addition, I develop projects, study the implementation of new
-          systems and technologies, participate in meetings to improve the
-          company, hire new employees, and manage their tasks. I am an important
-          member of the team and play a vital role in ensuring that the company
-          meets the needs of clients and stays up-to-date with technological
-          trends.
+          Key Projects
+          'El Chaco' AI-powered SaaS for startups to streamline business management and accelerate growth.
+          'Dental Care'  A dental practice platform with 3D modeling for tracking orthodontic progress via photo comparisons.
         </li>
       </ul>
     </motion.div>

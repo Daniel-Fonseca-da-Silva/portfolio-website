@@ -14,22 +14,22 @@ const Archive = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
         <ArchiveCard
-          title="Startup Website"
-          des="Having a website for your startup is a smart strategy to reach more people, build credibility, engage with the audience, and expand your business."
-          listItem={["Wordpress", "Elementor", "Hostinger"]}
-          link="https://fastdevoud.online/"
+          title="Dafon CV"
+          des="A smart solution for the time-consuming process of creating and customizing resumes to meet ATS screening criteria"
+          listItem={["Golang", "Rest", "VueJS"]}
+          link="https://github.com/Daniel-Fonseca-da-Silva/dafon-cv-api"
         />
         <ArchiveCard
-          title="Clinical Website"
-          des="Invest in the creation of a customized and high-quality website and take advantage of the benefits of a strong online presence."
-          listItem={["Wordpress", "Elementor", "Hostinger"]}
-          link="https://dentalcarewhite.online/"
+          title="Dafon PDF Extractor"
+          des="A robust FastAPI-based service for extracting company information from PDF files. This API processes PDF documents."
+          listItem={["Python", "Rest", "FastAPI"]}
+          link="https://github.com/Daniel-Fonseca-da-Silva/Dafon-PDF-Extractor-API"
         />
         <ArchiveCard
-          title="E-commerce Website"
-          des="Investing in an online e-commerce store is a smart strategy to boost your business, expand your reach, increase sales, and enhance the customer experience."
-          listItem={["Wordpress", "Elementor", "Woocommerce"]}
-          link="https://mercadosolano.online/"
+          title="Freight-Delay-Notification"
+          des="automated solution for monitoring, analyzing, and notifying freight delays using real-time traffic data."
+          listItem={["NestJs", "SendGrid", "GPT-4"]}
+          link="https://github.com/Daniel-Fonseca-da-Silva/Freight-Delay-Notification"
         />
         {showMore && (
           <>
@@ -40,9 +40,9 @@ const Archive = () => {
             >
               <ArchiveCard
                 title="Startup Website"
-                des="Having a website for your startup is a smart strategy to reach more people, build credibility, engage with the audience, and expand your business."
-                listItem={["Wordpress", "Elementor", "Hostinger"]}
-                link="https://fastdevoud.online/"
+                des="A microservice responsible for order management in a distributed architecture."
+                listItem={["RabbitMQ", "Java", "Mongo"]}
+                link="https://github.com/Daniel-Fonseca-da-Silva/Order-Ms-Api"
               />
             </motion.div>
             <motion.div
@@ -52,9 +52,9 @@ const Archive = () => {
             >
               <ArchiveCard
                 title="Clinical Website"
-                des="Invest in the creation of a customized and high-quality website and take advantage of the benefits of a strong online presence."
-                listItem={["Wordpress", "Elementor", "Hostinger"]}
-                link="https://dentalcarewhite.online/"
+                des="A real-time chat application built with gRPC and Go, featuring bidirectional streaming communication between clients and server."
+                listItem={["Golang", "gRPC", "GRPC-Gateway"]}
+                link="https://github.com/Daniel-Fonseca-da-Silva/Chat-GRPC-API"
               />
             </motion.div>
             <motion.div
@@ -64,9 +64,9 @@ const Archive = () => {
             >
               <ArchiveCard
                 title="E-commerce Website"
-                des="Investing in an online e-commerce store is a smart strategy to boost your business, expand your reach, increase sales, and enhance the customer experience."
-                listItem={["Wordpress", "Elementor", "Woocommerce"]}
-                link="https://mercadosolano.online/"
+                des="Sytem where you can to make a search by stores created with Ruby 3.0.2, sqlite3 and rails 7."
+                listItem={["Ruby", "Rails", "SQLite"]}
+                link="https://github.com/Daniel-Fonseca-da-Silva/dafonsearch"
               />
             </motion.div>
           </>

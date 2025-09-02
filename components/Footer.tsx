@@ -15,11 +15,9 @@ const Footer = () => {
           <BsWhatsapp />
         </span>
       </a>
-      <a href="https://discord.gg/Q7YjW9RY" target="_blank">
         <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
           <BsDiscord />
         </span>
-      </a>
       <a href="https://github.com/Daniel-Fonseca-da-Silva" target="_blank">
         <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
           <BsGithub />
@@ -33,12 +31,10 @@ const Footer = () => {
           <BsLinkedin />
         </span>
       </a>
-      <a href="#" target="_blank">
         <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
           <BsInstagram />
         </span>
-      </a>
-      <a href="https://dafon.dev/en/solucoes-english/" target="_blank">
+      <a href="http://www.dafon.online/" target="_blank">
         <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
           <BsGlobeAmericas />
         </span>
