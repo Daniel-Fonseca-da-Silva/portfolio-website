@@ -5,11 +5,11 @@ import { BsGithub, BsLinkedin, BsGlobeAmericas } from "react-icons/bs";
 
 const Projects = () => {
   return (
-    <section id="project" className="max-w-container mx-auto lgl:px-20 py-24">
+    <section id="project" className="max-w-container mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-12 sm:py-16 md:py-20 lg:py-24">
       <SectiontTitle title="Projects created" titleNo="03" />
-      <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
+      <div className="w-full flex flex-col items-center justify-between gap-12 sm:gap-16 md:gap-20 lg:gap-28 mt-6 sm:mt-8 md:mt-10">
         {/* Project 1 */}
-        <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
+        <div className="w-full flex flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20 lg:gap-28 mt-6 sm:mt-8 md:mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
             <a
               className="w-full xl:w-1/2 h-auto relative group"
@@ -24,21 +24,21 @@ const Projects = () => {
                 />
               </div>
             </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+            <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right xl:-ml-16 z-10 mt-4 xl:mt-0">
+              <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
                 Frontend Project
               </p>
-              <h3 className="text-2xl font-bold">Space Discovery Next Site</h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
+              <h3 className="text-xl sm:text-2xl font-bold">Space Discovery Next Site</h3>
+              <p className="bg-[#112240] text-xs sm:text-sm md:text-base p-3 sm:p-4 md:p-6 rounded-md">
               Modern template built with Next.js, Tailwind CSS, and I18N internationalization, designed as a foundation for creating professional landing pages for space exploration companies.
               </p>
-              <ul className="text-sm md:text-sm font-titleFont sm:text-xs tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
+              <ul className="text-xs sm:text-sm font-titleFont tracking-wide flex flex-wrap gap-2 sm:gap-3 md:gap-5 text-textDark">
                 <li>Astronomy</li>
                 <li>NextJS</li>
                 <li>TypeScript</li>
                 <li>Tailwind</li>
               </ul>
-              <div className="text-2xl flex gap-4">
+              <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
                   className="hover:text-textGreen duration-300"
                   href="https://github.com/Daniel-Fonseca-da-Silva/Landing-Page-Template-Astronomy"
@@ -80,21 +80,21 @@ const Projects = () => {
                 />
               </div>
             </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right z-10">
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+            <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right z-10 mt-4 xl:mt-0">
+              <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
                 Frontend Project
               </p>
-              <h3 className="text-2xl font-bold">Dental Care White</h3>
-              <p className="bg-[#112240] text-sm md:text-base xl:-mr-16  p-2 md:p-6 rounded-md">
+              <h3 className="text-xl sm:text-2xl font-bold">Dental Care White</h3>
+              <p className="bg-[#112240] text-xs sm:text-sm md:text-base xl:-mr-16 p-3 sm:p-4 md:p-6 rounded-md">
                 Site Created for a dental clinic, with the goal of offering a modern and easy-to-use website, with online appointment scheduling and consultation scheduling features.
               </p>
-              <ul className="text-sm md:text-sm font-titleFont sm:text-xs tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
+              <ul className="text-xs sm:text-sm font-titleFont tracking-wide flex flex-wrap gap-2 sm:gap-3 md:gap-5 text-textDark">
                 <li>Clinic</li>
                 <li>NextJS</li>
                 <li>TypeScript</li>
                 <li>Tailwind</li>
               </ul>
-              <div className="text-2xl flex gap-4">
+              <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
                   className="hover:text-textGreen duration-300"
                   href="https://github.com/Daniel-Fonseca-da-Silva"
@@ -136,21 +136,21 @@ const Projects = () => {
                 />
               </div>
             </a>
-            <div className="w-full xl:w-1/2 flex flex-col gap-6 lgl:justify-between items-end text-right xl:-ml-16 z-10">
-              <p className="font-titleFont text-textGreen text-sm tracking-wide">
+            <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right xl:-ml-16 z-10 mt-4 xl:mt-0">
+              <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
                 Frontend Project
               </p>
-              <h3 className="text-2xl font-bold">Dafon</h3>
-              <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
+              <h3 className="text-xl sm:text-2xl font-bold">Dafon</h3>
+              <p className="bg-[#112240] text-xs sm:text-sm md:text-base p-3 sm:p-4 md:p-6 rounded-md">
                 Customized system developed for companies and organizations of different sizes, using the most efficient and modern technologies in the market. Based on JavaScript with cloud architecture to optimize business processes.
               </p>
-              <ul className="text-sm md:text-sm font-titleFont sm:text-xs tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
+              <ul className="text-xs sm:text-sm font-titleFont tracking-wide flex flex-wrap gap-2 sm:gap-3 md:gap-5 text-textDark">
                 <li>Business Site</li>
                 <li>NextJS</li>
                 <li>TypeScript</li>
                 <li>Tailwind</li>
               </ul>
-              <div className="text-2xl flex gap-4">
+              <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
                   className="hover:text-textGreen duration-300"
                   href="https://github.com/Daniel-Fonseca-da-Silva"

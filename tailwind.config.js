@@ -15,13 +15,15 @@ module.exports = {
     extend: {
       screens: {
         xs: "320px",
-        sm: "375px",
-        sml: "500px",
-        md: "667",
-        mdl: "768px",
-        lg: "960px",
-        lgl: "1024px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
         xl: "1280px",
+        "2xl": "1536px",
+        // Breakpoints customizados mantidos para compatibilidade
+        sml: "500px",
+        mdl: "768px",
+        lgl: "1024px",
       },
       fontFamily: {
         bodyFont: ["Bruno Ace SC", "sans-serif"],

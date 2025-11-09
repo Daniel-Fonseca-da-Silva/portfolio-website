@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 const Archive = () => {
   const [showMore, setShowMore] = useState(false);
   return (
-    <div className="max-w-contentContainer mx-auto px-4 py-24">
+    <div className="max-w-contentContainer mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="w-full flex flex-col items-center">
-        <h2 className="text-3xl font-titleFont font-semibold">
+        <h2 className="text-2xl sm:text-3xl font-titleFont font-semibold text-center">
           Others Projects
         </h2>
-        <p className="text-sm font-titleFont text-textGreen">View my archive</p>
+        <p className="text-xs sm:text-sm font-titleFont text-textGreen mt-1">View my archive</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-8 md:mt-10 lg:px-10">
         <ArchiveCard
           title="Dafon CV"
           des="A smart solution for the time-consuming process of creating and customizing resumes to meet ATS screening criteria"
@@ -72,18 +72,18 @@ const Archive = () => {
           </>
         )}
       </div>
-      <div className="mt-12 flex items-center justify-center">
+      <div className="mt-8 sm:mt-10 md:mt-12 flex items-center justify-center">
         {showMore ? (
           <button
             onClick={() => setShowMore(false)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+            className="w-full sm:w-36 h-11 sm:h-12 rounded-md text-textGreen text-xs sm:text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
           >
             Show Less
           </button>
         ) : (
           <button
             onClick={() => setShowMore(true)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+            className="w-full sm:w-36 h-11 sm:h-12 rounded-md text-textGreen text-xs sm:text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
           >
             Show More
           </button>

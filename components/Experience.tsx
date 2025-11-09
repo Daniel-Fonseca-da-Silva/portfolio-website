@@ -72,20 +72,20 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
+      className="max-w-containerxs mx-auto py-8 sm:py-10 md:py-16 lg:py-24 px-4 sm:px-6"
     >
       <SectiontTitle title="Where I have Worked" titleNo="02" />
-      <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
-        <div className="flex divide-x">
-          <div className="w-1/2 p-4">
-            <ul className="md:w-32 flex flex-col">
+      <div className="w-full mt-6 sm:mt-8 md:mt-10 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
+        <div className="flex divide-x overflow-x-auto md:overflow-visible">
+          <div className="w-full md:w-1/2 p-2 sm:p-4 min-w-[200px] md:min-w-0">
+            <ul className="w-full md:w-32 flex flex-row md:flex-col gap-0">
               <li
                 onClick={handleLeroyMerlin}
                 className={`${
                   workLeroyMerlin
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
-                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
               >
                 LeroyMerlin
               </li>
@@ -95,7 +95,7 @@ const Experience = () => {
                   workGtGroup
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
-                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
               >
                 GtGroup
               </li>
@@ -105,7 +105,7 @@ const Experience = () => {
                   workExosfera
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
-                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
               >
                 Exosfera
               </li>
@@ -115,7 +115,7 @@ const Experience = () => {
                   workEquiplano
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
-                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
               >
                 Equiplano
               </li>
@@ -125,7 +125,7 @@ const Experience = () => {
                   workWlabs
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
-                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
               >
                 WLabs
               </li>
@@ -135,13 +135,13 @@ const Experience = () => {
                   workMzTech
                     ? "border-l-textGreen text-textGreen"
                     : "border-l-hoverColor text-textDark"
-                } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
               >
                 MzTech
               </li>
             </ul>
           </div>
-          <div className="w-1/2 p-4">
+          <div className="w-full md:w-1/2 p-2 sm:p-4 mt-4 md:mt-0">
             {workLeroyMerlin && <LeroyMerlin />}
             {workGtGroup && <GtGroup />}
             {workExosfera && <Exosfera />}

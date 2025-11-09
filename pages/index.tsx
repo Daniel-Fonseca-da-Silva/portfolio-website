@@ -32,7 +32,7 @@ export default function Home() {
           >
             <LeftSide />
           </motion.div>
-          <div className="w-full mx-auto p-4">
+          <div className="w-full mx-auto p-2 sm:p-3 md:p-4">
             <Banner />
             <About />
             <Experience />

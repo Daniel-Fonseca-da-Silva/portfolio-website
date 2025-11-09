@@ -8,14 +8,14 @@ const About = () => {
   return (
     <section
       id="about"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
+      className="max-w-containerSmall mx-auto py-8 sm:py-10 md:py-16 lg:py-32 flex flex-col gap-6 sm:gap-8 px-4 sm:px-6"
     >
       <SectiontTitle title="About me" titleNo="01" />
-      <div className="flex flex-col lgl:flex-row gap-16">
-        <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
+      <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
+        <div className="w-full lg:w-2/3 text-sm sm:text-base text-textDark font-medium flex flex-col gap-3 sm:gap-4">
           <p>
             Daniel Fonseca, I am a talented{" "}
-            <span className="text-textGreen">software Engineer</span> with
+            <span className="text-textGreen">System Engineer</span> with
             over five years of experience, specialized in creating{" "}
             <span className="text-textGreen">scalable systems, modern architecture</span>{" "}
             and agile development practices. My expertise spans a variety
@@ -25,7 +25,7 @@ const About = () => {
             <span className="text-textGreen">Java (Spring), Go (Golang), Node.js (NestJS), Next.js, Vue.js, TypeScript, JavaScript, Tailwind, Bootstrap, CSS3, HTML5, PostgreSQL, Redis, MySQL, Amazon AWS</span>.
           </p>
           
-          <h3 className="text-xl font-semibold text-textGreen mt-6 mb-3">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-textGreen mt-4 sm:mt-6 mb-2 sm:mb-3">
             Backend Development & Architecture
           </h3>
           <p>
@@ -50,7 +50,7 @@ const About = () => {
             to create maintainable and extensible codebases.
           </p>
           
-          <h3 className="text-xl font-semibold text-textGreen mt-6 mb-3">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-textGreen mt-4 sm:mt-6 mb-2 sm:mb-3">
             Cloud Infrastructure & DevOps
           </h3>
           <p>
@@ -128,7 +128,7 @@ const About = () => {
             <span className="text-textGreen">constant creation of new software</span>{" "}
             using modern and scalable cloud technologies.
           </p>
-          <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
+          <ul className="max-w-[450px] text-xs sm:text-sm font-titleFont grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-4 sm:mt-6">
             <li className="flex items-center gap-2">
               <span className="text-textGreen">
                 <IoIosCafe />
@@ -191,18 +191,18 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lgl:w-1/3 h-80 relative group">
-          <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
-            <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
+        <div className="w-full lg:w-1/3 h-64 sm:h-72 md:h-80 relative group mx-auto lg:mx-0">
+          <div className="absolute w-full h-64 sm:h-72 md:h-80 -left-3 sm:-left-4 md:-left-6 -top-3 sm:-top-4 md:-top-6 rounded-lg">
+            <div className="w-full h-full relative z-20 flex pl-3 sm:pl-4 md:pl-6 lg:pl-0">
               <Image
                 className="rounded-lg h-full object-cover"
                 src={profileImg}
                 alt="profileImg"
               />
-              <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
+              <div className="hidden lg:inline-block absolute w-full h-64 sm:h-72 md:h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
             </div>
           </div>
-          <div className="hidden lgl:inline-flex absolute w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
+          <div className="hidden lg:inline-flex absolute w-full h-64 sm:h-72 md:h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
         </div>
       </div>
     </section>
