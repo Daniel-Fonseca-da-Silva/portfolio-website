@@ -1,5 +1,4 @@
 import About from "@/components/About";
-import Archive from "@/components/Archive";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
@@ -21,7 +20,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="../public/assets/images/logo.png" />
       </Head>
-      <main className="w-full min-h-screen font-bodyFont bg-bodyColor text-textLight overflow-x-hidden scrollbar scrollbar-track-textDark/20 scrollbar-thumb-textDark/60">
+      <main className="w-full min-h-screen font-bodyFont gradient-bg text-textLight overflow-x-hidden scrollbar">
         <Navbar />
         <div className="w-full xl:flex items-center gap-20 justify-between">
           <motion.div
@@ -37,7 +36,6 @@ export default function Home() {
             <About />
             <Experience />
             <Projects />
-            <Archive />
             <Contact />
             <Footer />
             <SubFooter />

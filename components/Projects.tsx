@@ -28,15 +28,15 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
                 Frontend Project
               </p>
-              <h3 className="text-xl sm:text-2xl font-bold">Space Discovery Next Site</h3>
-              <p className="bg-[#112240] text-xs sm:text-sm md:text-base p-3 sm:p-4 md:p-6 rounded-md">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Space Discovery Next Site</h3>
+              <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
               Modern template built with Next.js, Tailwind CSS, and I18N internationalization, designed as a foundation for creating professional landing pages for space exploration companies.
               </p>
-              <ul className="text-xs sm:text-sm font-titleFont tracking-wide flex flex-wrap gap-2 sm:gap-3 md:gap-5 text-textDark">
-                <li>Astronomy</li>
-                <li>NextJS</li>
-                <li>TypeScript</li>
-                <li>Tailwind</li>
+              <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Astronomy</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
@@ -84,15 +84,15 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
                 Frontend Project
               </p>
-              <h3 className="text-xl sm:text-2xl font-bold">Dental Care White</h3>
-              <p className="bg-[#112240] text-xs sm:text-sm md:text-base xl:-mr-16 p-3 sm:p-4 md:p-6 rounded-md">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Dental Care White</h3>
+              <p className="glass text-sm sm:text-base md:text-lg xl:-mr-16 p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
                 Site Created for a dental clinic, with the goal of offering a modern and easy-to-use website, with online appointment scheduling and consultation scheduling features.
               </p>
-              <ul className="text-xs sm:text-sm font-titleFont tracking-wide flex flex-wrap gap-2 sm:gap-3 md:gap-5 text-textDark">
-                <li>Clinic</li>
-                <li>NextJS</li>
-                <li>TypeScript</li>
-                <li>Tailwind</li>
+              <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Clinic</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
@@ -140,15 +140,15 @@ const Projects = () => {
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
                 Frontend Project
               </p>
-              <h3 className="text-xl sm:text-2xl font-bold">Dafon</h3>
-              <p className="bg-[#112240] text-xs sm:text-sm md:text-base p-3 sm:p-4 md:p-6 rounded-md">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Dafon</h3>
+              <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
                 Customized system developed for companies and organizations of different sizes, using the most efficient and modern technologies in the market. Based on JavaScript with cloud architecture to optimize business processes.
               </p>
-              <ul className="text-xs sm:text-sm font-titleFont tracking-wide flex flex-wrap gap-2 sm:gap-3 md:gap-5 text-textDark">
-                <li>Business Site</li>
-                <li>NextJS</li>
-                <li>TypeScript</li>
-                <li>Tailwind</li>
+              <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Business Site</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a

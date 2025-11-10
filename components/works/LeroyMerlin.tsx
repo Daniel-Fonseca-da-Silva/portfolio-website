@@ -10,7 +10,7 @@ const LeroyMerlin = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
-        Software Developer
+        System Engineer
       </h3>
       <p className="text-sm md:text-lg mt-1 font-medium text-textDark">
         Dec 2024 - Jul 2025

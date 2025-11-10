@@ -74,81 +74,79 @@ const Experience = () => {
       id="experience"
       className="max-w-containerxs mx-auto py-8 sm:py-10 md:py-16 lg:py-24 px-4 sm:px-6"
     >
-      <SectiontTitle title="Where I have Worked" titleNo="02" />
+      <SectiontTitle title="Where I've worked" titleNo="02" />
       <div className="w-full mt-6 sm:mt-8 md:mt-10 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
-        <div className="flex divide-x overflow-x-auto md:overflow-visible">
-          <div className="w-full md:w-1/2 p-2 sm:p-4 min-w-[200px] md:min-w-0">
-            <ul className="w-full md:w-32 flex flex-row md:flex-col gap-0">
-              <li
-                onClick={handleLeroyMerlin}
-                className={`${
-                  workLeroyMerlin
-                    ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
-              >
-                LeroyMerlin
-              </li>
-              <li
-                onClick={handleGtGroup}
-                className={`${
-                  workGtGroup
-                    ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
-              >
-                GtGroup
-              </li>
-              <li
-                onClick={handleExosfera}
-                className={`${
-                  workExosfera
-                    ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
-              >
-                Exosfera
-              </li>
-              <li
-                onClick={handleEquiplano}
-                className={`${
-                  workEquiplano
-                    ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
-              >
-                Equiplano
-              </li>
-              <li
-                onClick={handleWlabs}
-                className={`${
-                  workWlabs
-                    ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
-              >
-                WLabs
-              </li>
-              <li
-                onClick={handleMzTech}
-                className={`${
-                  workMzTech
-                    ? "border-l-textGreen text-textGreen"
-                    : "border-l-hoverColor text-textDark"
-                } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-[#112240] py-2 sm:py-3 text-xs sm:text-sm cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap`}
-              >
-                MzTech
-              </li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/2 p-2 sm:p-4 mt-4 md:mt-0">
-            {workLeroyMerlin && <LeroyMerlin />}
-            {workGtGroup && <GtGroup />}
-            {workExosfera && <Exosfera />}
-            {workEquiplano && <Equiplano />}
-            {workWlabs && <Wlabs />}
-            {workMzTech && <MzTech />}
-          </div>
+        <div className="w-full md:w-1/2 p-2 sm:p-4 min-w-[200px] md:min-w-0 overflow-x-auto md:overflow-visible">
+          <ul className="w-full md:w-32 flex flex-row md:flex-col gap-0">
+            <li
+              onClick={handleLeroyMerlin}
+              className={`${
+                workLeroyMerlin
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              LeroyMerlin
+            </li>
+            <li
+              onClick={handleGtGroup}
+              className={`${
+                workGtGroup
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              GtGroup
+            </li>
+            <li
+              onClick={handleExosfera}
+              className={`${
+                workExosfera
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              Exosfera
+            </li>
+            <li
+              onClick={handleEquiplano}
+              className={`${
+                workEquiplano
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              Equiplano
+            </li>
+            <li
+              onClick={handleWlabs}
+              className={`${
+                workWlabs
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              WLabs
+            </li>
+            <li
+              onClick={handleMzTech}
+              className={`${
+                workMzTech
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              MzTech
+            </li>
+          </ul>
+        </div>
+        <div className="w-full md:w-1/2 p-2 sm:p-4 mt-4 md:mt-0">
+          {workLeroyMerlin && <LeroyMerlin />}
+          {workGtGroup && <GtGroup />}
+          {workExosfera && <Exosfera />}
+          {workEquiplano && <Equiplano />}
+          {workWlabs && <Wlabs />}
+          {workMzTech && <MzTech />}
         </div>
       </div>
     </section>

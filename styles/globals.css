@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-bodyColor text-textLight antialiased;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 .active {
-  color: #64ffda
+  color: #00d9ff;
 }
 
 /* Custom scrollbar styles */
@@ -18,16 +25,16 @@ body {
 }
 
 .scrollbar::-webkit-scrollbar-track {
-  background: rgba(136, 146, 176, 0.2);
+  background: rgba(15, 22, 41, 0.5);
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(136, 146, 176, 0.6);
+  background: rgba(0, 217, 255, 0.3);
   border-radius: 4px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(136, 146, 176, 0.8);
+  background: rgba(0, 217, 255, 0.5);
 }
 
 /* Hide scrollbar for specific elements */
@@ -38,4 +45,34 @@ body {
 .scrollbarHide {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Modern gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #0a0e27 0%, #0f1629 50%, #1a1f3a 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #00d9ff 0%, #3b82f6 50%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(15, 22, 41, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+/* Glow effects */
+.glow-green {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.3);
+}
+
+.glow-green-hover:hover {
+  box-shadow: 0 0 30px rgba(0, 217, 255, 0.5);
+  transition: box-shadow 0.3s ease;
 }

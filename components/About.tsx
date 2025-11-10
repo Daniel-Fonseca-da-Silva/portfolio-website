@@ -12,197 +12,137 @@ const About = () => {
     >
       <SectiontTitle title="About me" titleNo="01" />
       <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
-        <div className="w-full lg:w-2/3 text-sm sm:text-base text-textDark font-medium flex flex-col gap-3 sm:gap-4">
-          <p>
-            Daniel Fonseca, I am a talented{" "}
-            <span className="text-textGreen">System Engineer</span> with
-            over five years of experience, specialized in creating{" "}
-            <span className="text-textGreen">scalable systems, modern architecture</span>{" "}
-            and agile development practices. My expertise spans a variety
-            of technologies and frameworks, allowing me to work on both
-            <span className="text-textGreen">front-end and back-end</span>{" "}
-            application development. I have deep knowledge in{" "}
-            <span className="text-textGreen">Java (Spring), Go (Golang), Node.js (NestJS), Next.js, Vue.js, TypeScript, JavaScript, Tailwind, Bootstrap, CSS3, HTML5, PostgreSQL, Redis, MySQL, Amazon AWS</span>.
-          </p>
-          
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-textGreen mt-4 sm:mt-6 mb-2 sm:mb-3">
-            Backend Development & Architecture
+        <div className="w-full lg:w-2/3 text-base sm:text-lg text-textDark font-normal flex flex-col gap-4 sm:gap-6">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-2 sm:mt-4 mb-3 sm:mb-4">
+            FullStack Development & System Architecture
           </h3>
           <p>
-            In backend development, I specialize in building{" "}
-            <span className="text-textGreen">high-performance, scalable APIs and microservices</span>{" "}
-            using modern technologies. My expertise includes{" "}
-            <span className="text-textGreen">Java with Spring Framework</span> for enterprise applications,{" "}
-            <span className="text-textGreen">Go (Golang)</span> for high-performance systems, and{" "}
-            <span className="text-textGreen">NestJS</span> for structured Node.js applications. I design{" "}
-            <span className="text-textGreen">RESTful APIs, GraphQL endpoints</span>, and implement{" "}
-            <span className="text-textGreen">asynchronous communication patterns</span> using{" "}
-            <span className="text-textGreen">RabbitMQ, Google Pub/Sub, and AWS SQS/SNS</span>.
-          </p>
-          <p>
-            I excel in{" "}
-            <span className="text-textGreen">database design and optimization</span>, working with{" "}
-            <span className="text-textGreen">PostgreSQL, MySQL, Redis, and MongoDB</span>. I implement{" "}
-            <span className="text-textGreen">caching strategies, connection pooling</span>, and{" "}
-            <span className="text-textGreen">database sharding</span> for high-traffic applications. My{" "}
-            <span className="text-textGreen">software architecture skills</span> include applying{" "}
-            <span className="text-textGreen">SOLID principles, Clean Code practices, and design patterns</span>{" "}
-            to create maintainable and extensible codebases.
+            Most of my work happens on the backend. I build{" "}
+            <span className="text-textGreen">APIs and microservices</span>{" "}
+            in <span className="text-textGreen">Java with Spring</span>,{" "}
+            <span className="text-textGreen">Go</span> for performance-critical services, and{" "}
+            <span className="text-textGreen">NestJS</span> when TypeScript fits the project.{" "}
+            I've designed systems that handle millions of requests, using{" "}
+            <span className="text-textGreen">message queues (RabbitMQ, Pub/Sub, SQS)</span>{" "}
+            to decouple services and keep things responsive. When it comes to databases,{" "}
+            <span className="text-textGreen">I optimize queries, set up proper indexing, and implement caching strategies</span>{" "}
+            that actually make a difference. Code quality matters—I write{" "}
+            <span className="text-textGreen">clean, testable code following SOLID principles</span>{" "}
+            because I've seen what happens when you don't.
           </p>
           
-          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-textGreen mt-4 sm:mt-6 mb-2 sm:mb-3">
+          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-6 sm:mt-8 mb-3 sm:mb-4">
             Cloud Infrastructure & DevOps
           </h3>
           <p>
-            In cloud infrastructure, I have extensive experience with{" "}
-            <span className="text-textGreen">Amazon Web Services (AWS)</span>, designing and implementing{" "}
-            <span className="text-textGreen">scalable, fault-tolerant architectures</span>. I work with{" "}
-            <span className="text-textGreen">EC2, ECS, Lambda, RDS, S3, CloudFormation, and EFS</span>{" "}
-            to build robust cloud-native applications. I implement{" "}
-            <span className="text-textGreen">Infrastructure as Code (IaC)</span> using{" "}
-            <span className="text-textGreen">Terraform and CloudFormation</span>, ensuring{" "}
-            <span className="text-textGreen">reproducible and version-controlled infrastructure</span>.
-          </p>
-          <p>
-            My DevOps expertise includes{" "}
-            <span className="text-textGreen">containerization with Docker and orchestration with Kubernetes</span>,{" "}
-            <span className="text-textGreen">CI/CD pipeline automation</span> using tools like{" "}
-            <span className="text-textGreen">GitHub Actions, Jenkins, and AWS CodePipeline</span>. I implement{" "}
-            <span className="text-textGreen">monitoring and logging solutions</span>,{" "}
-            <span className="text-textGreen">load balancing strategies</span>, and{" "}
-            <span className="text-textGreen">network security configurations</span> including{" "}
-            <span className="text-textGreen">VPCs, security groups, and IAM policies</span>.
+            I've deployed and maintained systems on{" "}
+            <span className="text-textGreen">AWS</span> for years, from{" "}
+            <span className="text-textGreen">EC2 instances</span> to{" "}
+            <span className="text-textGreen">serverless architectures with Lambda</span>.{" "}
+            I use <span className="text-textGreen">Terraform</span> to manage infrastructure because{" "}
+            <span className="text-textGreen">reproducibility and version control</span>{" "}
+            save time and prevent disasters. Containers are part of my workflow—{" "}
+            <span className="text-textGreen">Docker for development and Kubernetes for orchestration</span>.{" "}
+            I've set up <span className="text-textGreen">CI/CD pipelines</span> that catch issues early{" "}
+            and deploy with confidence. Monitoring, logging, and{" "}
+            <span className="text-textGreen">proper security configurations</span>{" "}
+            aren't afterthoughts—they're built in from the start.
           </p>
           
           <p>
-            I also have a strong background in{" "}
-            <span className="text-textGreen">databases and storage solutions</span>, including{" "}
-            <span className="text-textGreen">PostgreSQL, Redis, MySQL, Amazon Aurora, and MinIO</span>. I am skilled in{" "}
-            <span className="text-textGreen">
-              designing and modeling efficient databases
-            </span>
-            , ensuring proper data storage and retrieval for complex
-            applications. My expertise extends to{" "}
-            <span className="text-textGreen">distributed caching and object storage</span>{" "}
-            for high-performance systems.
+            Beyond the standard stack, I've built{" "}
+            <span className="text-textGreen">custom authentication systems</span>,{" "}
+            implemented <span className="text-textGreen">Magic Link flows</span>,{" "}
+            and designed <span className="text-textGreen">concurrent processing systems</span>{" "}
+            that handle heavy workloads efficiently. I've also worked on{" "}
+            <span className="text-textGreen">AI integrations, web scraping pipelines, and automation tools</span>{" "}
+            that solve specific business problems.
           </p>
           <p>
-            In the realm of{" "}
-            <span className="text-textGreen">DevOps and Cloud infrastructure</span>, I have extensive experience with{" "}
-            <span className="text-textGreen">AWS services (S3, EC2, RDS, Lambda, ECS, CloudFormation, EFS)</span>,{" "}
-            <span className="text-textGreen">Terraform for Infrastructure as Code</span>,{" "}
-            <span className="text-textGreen">Docker and Kubernetes</span> for containerization,{" "}
-            <span className="text-textGreen">load balancing, networking (subnets, security groups)</span>, and{" "}
-            <span className="text-textGreen">Linux system administration</span>. I also work with{" "}
-            <span className="text-textGreen">CI/CD pipelines and application monitoring</span>.
+            I've led teams as a <span className="text-textGreen">Tech Lead</span>,{" "}
+            making technical decisions and setting quality standards. I enjoy{" "}
+            <span className="text-textGreen">mentoring developers</span> and{" "}
+            <span className="text-textGreen">sharing knowledge</span>—{" "}
+            the best code comes from teams that understand not just what they're building, but why.{" "}
+            I stay current with new technologies, but I'm pragmatic about what actually works in production.
           </p>
-          <p>
-            I excel in{" "}
-            <span className="text-textGreen">software architecture and design patterns</span>, applying{" "}
-            <span className="text-textGreen">SOLID principles and Clean Code</span> practices. I create{" "}
-            <span className="text-textGreen">custom middlewares</span> for authentication, logging, and validation, implement{" "}
-            <span className="text-textGreen">Magic Link authentication</span>, and design{" "}
-            <span className="text-textGreen">parallel and concurrent systems</span> for high performance. I also work with{" "}
-            <span className="text-textGreen">AI-powered intelligent systems, web scraping, and data automation</span>.
-          </p>
-          <p>
-            In addition to my technical skills, I excel in{" "}
-            <span className="text-textGreen">supporting and mentoring junior developers</span>. I am always willing to{" "}
-            <span className="text-textGreen">share my knowledge</span> and help
-            the <span className="text-textGreen">team grow and develop</span>.
-            My experience includes working collaboratively, providing guidance,
-            and resolving{" "}
-            <span className="text-textGreen">technical challenges</span>. I have experience as a{" "}
-            <span className="text-textGreen">Tech Lead</span>, supporting teams in technical decisions and quality standards.
-          </p>
-          <p>
-            Continuous improvement of{" "}
-            <span className="text-textGreen">front-end and back-end web systems</span> is a
-            crucial aspect of my work. I constantly seek opportunities to{" "}
-            <span className="text-textGreen">
-              optimize and enhance performance, usability, and security{" "}
-            </span>
-            in the applications I develop. I stay updated with industry best
-            practices and trends, ensuring the systems I build align with the
-            highest quality standards. Recently, I have been intensely dedicated to{" "}
-            <span className="text-textGreen">constant creation of new software</span>{" "}
-            using modern and scalable cloud technologies.
-          </p>
-          <ul className="max-w-[450px] text-xs sm:text-sm font-titleFont grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mt-4 sm:mt-6">
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+          <ul className="max-w-[500px] text-sm sm:text-base font-titleFont grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              Golang, Java
+              <span>Golang, Java</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <SiSpring />
               </span>
-              Spring, NestJS, Gorm
+              <span>Spring, NestJS, Gorm</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <SiTypescript />
               </span>
-              JavaScript / TypeScript
+              <span>JavaScript / TypeScript</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              HTML5, CSS3, Tailwind, Bootstrap
+              <span>HTML5, CSS3, Tailwind, Bootstrap</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <SiReact />
               </span>
-              Vue, Next, Angular
+              <span>Vue, Next, Angular</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              Swagger, Postman, Rest, GraphQL
+              <span>Swagger, Postman, Rest, GraphQL</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              RabbitMQ, Google Pub/Sub, SQS, SNS
+              <span>RabbitMQ, Google Pub/Sub, SQS, SNS</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              PostGreSQL, MySQL, Redis, OracleDB, MongoDB
+              <span>PostGreSQL, MySQL, Redis, OracleDB, MongoDB</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              SOLID, Clean Code, Design Patterns
+              <span>SOLID, Clean Code, Design Patterns</span>
             </li>
-            <li className="flex items-center gap-2">
-              <span className="text-textGreen">
+            <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
+              <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              AWS, Docker/Kubernetes, Terraform
+              <span>AWS, Docker/Kubernetes, Terraform</span>
             </li>
           </ul>
         </div>
         <div className="w-full lg:w-1/3 h-64 sm:h-72 md:h-80 relative group mx-auto lg:mx-0">
-          <div className="absolute w-full h-64 sm:h-72 md:h-80 -left-3 sm:-left-4 md:-left-6 -top-3 sm:-top-4 md:-top-6 rounded-lg">
-            <div className="w-full h-full relative z-20 flex pl-3 sm:pl-4 md:pl-6 lg:pl-0">
-              <Image
-                className="rounded-lg h-full object-cover"
-                src={profileImg}
-                alt="profileImg"
-              />
-              <div className="hidden lg:inline-block absolute w-full h-64 sm:h-72 md:h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
+          <div className="absolute w-full h-64 sm:h-72 md:h-80 -left-4 sm:-left-6 md:-left-8 -top-4 sm:-top-6 md:-top-8 rounded-xl overflow-hidden">
+            <div className="w-full h-full relative z-20 flex pl-4 sm:pl-6 md:pl-8 lg:pl-0">
+              <div className="relative w-full h-full rounded-xl overflow-hidden">
+                <Image
+                  className="rounded-xl h-full w-full object-cover"
+                  src={profileImg}
+                  alt="profileImg"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-textGreen/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
             </div>
           </div>
-          <div className="hidden lg:inline-flex absolute w-full h-64 sm:h-72 md:h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
+          <div className="hidden lg:inline-flex absolute w-full h-64 sm:h-72 md:h-80 border-2 border-textGreen rounded-xl group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300 glow-green-hover"></div>
         </div>
       </div>
     </section>
