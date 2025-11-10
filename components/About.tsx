@@ -71,13 +71,13 @@ const About = () => {
               <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              <span>Golang, Java</span>
+              <span>Golang, Python, Java</span>
             </li>
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
               <span className="text-textGreen text-lg">
                 <SiSpring />
               </span>
-              <span>Spring, NestJS, Gorm</span>
+              <span>Spring, Grafana, Prometheus</span>
             </li>
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
               <span className="text-textGreen text-lg">

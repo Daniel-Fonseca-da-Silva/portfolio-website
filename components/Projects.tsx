@@ -1,4 +1,4 @@
-import { dafonImg, dentalImg, spaceImg } from "@/public/assets";
+import {dafonCvBanner, dafonpdfExtractor, dafoSite } from "@/public/assets";
 import SectiontTitle from "./SectiontTitle";
 import Image from "next/image";
 import { BsGithub, BsLinkedin, BsGlobeAmericas } from "react-icons/bs";
@@ -13,30 +13,30 @@ const Projects = () => {
           <div className="flex flex-col xl:flex-row gap-6">
             <a
               className="w-full xl:w-1/2 h-auto relative group"
-              href="https://space-discovery-three.vercel.app"
+              href="https://github.com/Daniel-Fonseca-da-Silva/Dafon-PDF-Extractor-API"
               target="_blank"
             >
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={spaceImg}
-                  alt="Space Discovery"
+                  src={dafonpdfExtractor}
+                  alt="Dafon PDF Extractor API image"
                 />
               </div>
             </a>
             <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right xl:-ml-16 z-10 mt-4 xl:mt-0">
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
-                Frontend Project
+                API
               </p>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Space Discovery Next Site</h3>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">PDF Extractor API</h3>
               <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
-              Modern template built with Next.js, Tailwind CSS, and I18N internationalization, designed as a foundation for creating professional landing pages for space exploration companies.
+              This API processes PDF documents to identify and extract company names, NIFs (Portuguese Tax Identification Numbers), and related data.
               </p>
               <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Astronomy</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Restfull API</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Python</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Swagger</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Docker</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
@@ -48,7 +48,7 @@ const Projects = () => {
                 </a>
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="http://www.dafon.online/"
+                  href=""
                   target="_blank"
                 >
                   <BsGlobeAmericas />
@@ -75,36 +75,37 @@ const Projects = () => {
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={dentalImg}
-                  alt="Dental Care White"
+                  src={dafonCvBanner}
+                  alt="DafonCV banner image"
                 />
               </div>
             </a>
             <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right z-10 mt-4 xl:mt-0">
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
-                Frontend Project
+                SaaS
               </p>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Dental Care White</h3>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">DafonCV </h3>
               <p className="glass text-sm sm:text-base md:text-lg xl:-mr-16 p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
-                Site Created for a dental clinic, with the goal of offering a modern and easy-to-use website, with online appointment scheduling and consultation scheduling features.
+              A smart solution born from years of research and validation of a real pain point faced by millions: the overwhelming time spent creating and customizing resumes, especially to meet the strict criteria of automated screening systems like ATS
               </p>
               <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Clinic</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">SaaS</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Golang</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">MySQL</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="https://github.com/Daniel-Fonseca-da-Silva"
+                  href="https://github.com/Daniel-Fonseca-da-Silva/dafon-cv-api"
                   target="_blank"
                 >
                   <BsGithub />
                 </a>
                 <a
                   className="hover:text-textGreen duration-300"
-                  href=""
+                  href="https://www.dafoncv.online"
                   target="_blank"
                 >
                   <BsGlobeAmericas />
@@ -125,27 +126,27 @@ const Projects = () => {
           <div className="flex flex-col xl:flex-row gap-6">
             <a
               className="w-full xl:w-1/2 h-auto relative group"
-              href="http://www.dafon.online/"
+              href="https://www.dafon.online"
               target="_blank"
             >
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={dafonImg}
-                  alt="Dafon"
+                  src={dafoSite}
+                  alt="Dafon website image"
                 />
               </div>
             </a>
             <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right xl:-ml-16 z-10 mt-4 xl:mt-0">
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
-                Frontend Project
+                Website
               </p>
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Dafon</h3>
               <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
-                Customized system developed for companies and organizations of different sizes, using the most efficient and modern technologies in the market. Based on JavaScript with cloud architecture to optimize business processes.
+              The Dafon Website is a modern and responsive web application developed to present Dafon company, its innovative solutions, projects, locations, and contact information. The site was built with a focus on performance, SEO, accessibility, and user experience.
               </p>
               <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Business Site</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Landing Page</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
@@ -153,14 +154,14 @@ const Projects = () => {
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="https://github.com/Daniel-Fonseca-da-Silva"
+                  href="https://github.com/Daniel-Fonseca-da-Silva/dafon-site"
                   target="_blank"
                 >
                   <BsGithub />
                 </a>
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="http://www.dafon.online/"
+                  href="https://www.dafon.online"
                   target="_blank"
                 >
                   <BsGlobeAmericas />
