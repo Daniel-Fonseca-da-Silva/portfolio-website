@@ -22,20 +22,20 @@ const About = () => {
             in <span className="text-textGreen">Java with Spring</span>,{" "}
             <span className="text-textGreen">Go</span> for performance-critical services, and{" "}
             <span className="text-textGreen">NestJS</span> when TypeScript fits the project.{" "}
-            I've designed systems that handle millions of requests, using{" "}
+            I&apos;ve designed systems that handle millions of requests, using{" "}
             <span className="text-textGreen">message queues (RabbitMQ, Pub/Sub, SQS)</span>{" "}
             to decouple services and keep things responsive. When it comes to databases,{" "}
             <span className="text-textGreen">I optimize queries, set up proper indexing, and implement caching strategies</span>{" "}
             that actually make a difference. Code quality matters—I write{" "}
             <span className="text-textGreen">clean, testable code following SOLID principles</span>{" "}
-            because I've seen what happens when you don't.
+            because I&apos;ve seen what happens when you don&apos;t.
           </p>
           
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-6 sm:mt-8 mb-3 sm:mb-4">
             Cloud Infrastructure & DevOps
           </h3>
           <p>
-            I've deployed and maintained systems on{" "}
+            I&apos;ve deployed and maintained systems on{" "}
             <span className="text-textGreen">AWS</span> for years, from{" "}
             <span className="text-textGreen">EC2 instances</span> to{" "}
             <span className="text-textGreen">serverless architectures with Lambda</span>.{" "}
@@ -43,28 +43,28 @@ const About = () => {
             <span className="text-textGreen">reproducibility and version control</span>{" "}
             save time and prevent disasters. Containers are part of my workflow—{" "}
             <span className="text-textGreen">Docker for development and Kubernetes for orchestration</span>.{" "}
-            I've set up <span className="text-textGreen">CI/CD pipelines</span> that catch issues early{" "}
+            I&apos;ve set up <span className="text-textGreen">CI/CD pipelines</span> that catch issues early{" "}
             and deploy with confidence. Monitoring, logging, and{" "}
             <span className="text-textGreen">proper security configurations</span>{" "}
-            aren't afterthoughts—they're built in from the start.
+            aren&apos;t afterthoughts—they&apos;re built in from the start.
           </p>
           
           <p>
-            Beyond the standard stack, I've built{" "}
+            Beyond the standard stack, I&apos;ve built{" "}
             <span className="text-textGreen">custom authentication systems</span>,{" "}
             implemented <span className="text-textGreen">Magic Link flows</span>,{" "}
             and designed <span className="text-textGreen">concurrent processing systems</span>{" "}
-            that handle heavy workloads efficiently. I've also worked on{" "}
+            that handle heavy workloads efficiently. I&apos;ve also worked on{" "}
             <span className="text-textGreen">AI integrations, web scraping pipelines, and automation tools</span>{" "}
             that solve specific business problems.
           </p>
           <p>
-            I've led teams as a <span className="text-textGreen">Tech Lead</span>,{" "}
+            I&apos;ve led teams as a <span className="text-textGreen">Tech Lead</span>,{" "}
             making technical decisions and setting quality standards. I enjoy{" "}
             <span className="text-textGreen">mentoring developers</span> and{" "}
             <span className="text-textGreen">sharing knowledge</span>—{" "}
-            the best code comes from teams that understand not just what they're building, but why.{" "}
-            I stay current with new technologies, but I'm pragmatic about what actually works in production.
+            the best code comes from teams that understand not just what they&apos;re building, but why.{" "}
+            I stay current with new technologies, but I&apos;m pragmatic about what actually works in production.
           </p>
           <ul className="max-w-[500px] text-sm sm:text-base font-titleFont grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">

@@ -74,7 +74,7 @@ const Experience = () => {
       id="experience"
       className="max-w-containerxs mx-auto py-8 sm:py-10 md:py-16 lg:py-24 px-4 sm:px-6"
     >
-      <SectiontTitle title="Where I've worked" titleNo="02" />
+      <SectiontTitle title="Where I&apos;ve worked" titleNo="02" />
       <div className="w-full mt-6 sm:mt-8 md:mt-10 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
         <div className="w-full md:w-1/2 p-2 sm:p-4 min-w-[200px] md:min-w-0 overflow-x-auto md:overflow-visible">
           <ul className="w-full md:w-32 flex flex-row md:flex-col gap-0">

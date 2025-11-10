@@ -12,7 +12,7 @@ const Contact = () => {
       </h2>
       <p className="max-w-[700px] text-center text-base sm:text-lg text-textDark leading-relaxed mb-8 sm:mb-10">
         Deliver exceptional software solutions tailored to your business needs. 
-        Let's transform your digital infrastructure together.
+        Let&apos;s transform your digital infrastructure together.
       </p>
       <a href="https://wa.me/351913619053" target="_blank" className="group">
         <button className="w-full sm:w-56 h-14 sm:h-16 border-2 border-textGreen mt-4 sm:mt-6 font-titleFont text-sm sm:text-base text-textGreen tracking-wider rounded-lg hover:bg-hoverColor duration-300 transition-all glow-green-hover font-semibold flex items-center justify-center gap-2">
