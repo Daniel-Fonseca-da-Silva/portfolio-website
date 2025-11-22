@@ -14,57 +14,33 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
         <div className="w-full lg:w-2/3 text-base sm:text-lg text-textDark font-normal flex flex-col gap-4 sm:gap-6">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-2 sm:mt-4 mb-3 sm:mb-4">
-            FullStack Development & System Architecture
+          System Engineer
           </h3>
           <p>
-            Most of my work happens on the backend. I build{" "}
-            <span className="text-textGreen">APIs and microservices</span>{" "}
-            in <span className="text-textGreen">Java with Spring</span>,{" "}
-            <span className="text-textGreen">Go</span> for performance-critical services, and{" "}
-            <span className="text-textGreen">NestJS</span> when TypeScript fits the project.{" "}
-            I&apos;ve designed systems that handle millions of requests, using{" "}
-            <span className="text-textGreen">message queues (RabbitMQ, Pub/Sub, SQS)</span>{" "}
-            to decouple services and keep things responsive. When it comes to databases,{" "}
-            <span className="text-textGreen">I optimize queries, set up proper indexing, and implement caching strategies</span>{" "}
-            that actually make a difference. Code quality matters—I write{" "}
-            <span className="text-textGreen">clean, testable code following SOLID principles</span>{" "}
-            because I&apos;ve seen what happens when you don&apos;t.
-          </p>
-          
-          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-6 sm:mt-8 mb-3 sm:mb-4">
-            Cloud Infrastructure & DevOps
-          </h3>
-          <p>
-            I&apos;ve deployed and maintained systems on{" "}
-            <span className="text-textGreen">AWS</span> for years, from{" "}
-            <span className="text-textGreen">EC2 instances</span> to{" "}
-            <span className="text-textGreen">serverless architectures with Lambda</span>.{" "}
-            I use <span className="text-textGreen">Terraform</span> to manage infrastructure because{" "}
-            <span className="text-textGreen">reproducibility and version control</span>{" "}
-            save time and prevent disasters. Containers are part of my workflow—{" "}
-            <span className="text-textGreen">Docker for development and Kubernetes for orchestration</span>.{" "}
-            I&apos;ve set up <span className="text-textGreen">CI/CD pipelines</span> that catch issues early{" "}
-            and deploy with confidence. Monitoring, logging, and{" "}
-            <span className="text-textGreen">proper security configurations</span>{" "}
-            aren&apos;t afterthoughts—they&apos;re built in from the start.
-          </p>
-          
-          <p>
-            Beyond the standard stack, I&apos;ve built{" "}
-            <span className="text-textGreen">custom authentication systems</span>,{" "}
-            implemented <span className="text-textGreen">Magic Link flows</span>,{" "}
-            and designed <span className="text-textGreen">concurrent processing systems</span>{" "}
-            that handle heavy workloads efficiently. I&apos;ve also worked on{" "}
-            <span className="text-textGreen">AI integrations, web scraping pipelines, and automation tools</span>{" "}
-            that solve specific business problems.
+            Software Engineer with over 10 years of experience, specialized in initiating and developing{" "}
+            <span className="text-textGreen">projects from scratch</span> for companies, transforming ideas into{" "}
+            <span className="text-textGreen">complete and scalable systems</span>. Founder and independent developer, I work on creating{" "}
+            <span className="text-textGreen">original software and digital solutions</span> from conception to delivery, combining{" "}
+            <span className="text-textGreen">strategic vision</span> with cutting-edge technical execution.
           </p>
           <p>
-            I&apos;ve led teams as a <span className="text-textGreen">Tech Lead</span>,{" "}
-            making technical decisions and setting quality standards. I enjoy{" "}
-            <span className="text-textGreen">mentoring developers</span> and{" "}
-            <span className="text-textGreen">sharing knowledge</span>—{" "}
-            the best code comes from teams that understand not just what they&apos;re building, but why.{" "}
-            I stay current with new technologies, but I&apos;m pragmatic about what actually works in production.
+            Expert in developing modern systems using the latest market technologies, including{" "}
+            <span className="text-textGreen">Golang</span>, <span className="text-textGreen">Java</span>,{" "}
+            <span className="text-textGreen">Cloud Computing</span>, <span className="text-textGreen">Solidity</span>,{" "}
+            <span className="text-textGreen">Web 3.0</span>, <span className="text-textGreen">Smart Chains</span>, and{" "}
+            <span className="text-textGreen">Microservices</span>. I integrate{" "}
+            <span className="text-textGreen">Artificial Intelligence (AI)</span> into the development process to accelerate{" "}
+            <span className="text-textGreen">product creation</span>, optimize solutions, and deliver{" "}
+            <span className="text-textGreen">innovative systems</span> that generate real value for companies.
+          </p>
+          <p>
+            Results-driven <span className="text-textGreen">technical leader</span> with a proven track record in transforming{" "}
+            <span className="text-textGreen">business challenges</span> into unique digital products. My approach combines{" "}
+            <span className="text-textGreen">robust system architecture</span>,{" "}
+            <span className="text-textGreen">agile methodologies (Scrum, Kanban)</span>,{" "}
+            <span className="text-textGreen">DevOps practices</span> and a holistic vision that connects{" "}
+            <span className="text-textGreen">technology, creativity and purpose</span> to create solutions that drive{" "}
+            <span className="text-textGreen">sustainable growth</span> for organizations.
           </p>
           <ul className="max-w-[500px] text-sm sm:text-base font-titleFont grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
