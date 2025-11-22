@@ -6,6 +6,7 @@ import MzTech from "./works/MzTech";
 import Wlabs from "./works/Wlabs";
 import Exosfera from "./works/Exosfera";
 import LeroyMerlin from "./works/LeroyMerlin";
+import SmartSolutions from "./works/SmartSolutions";
 
 const Experience = () => {
   const [workGtGroup, setWorkGtGroup] = useState(false);
@@ -14,7 +15,17 @@ const Experience = () => {
   const [workWlabs, setWorkWlabs] = useState(false);
   const [workExosfera, setWorkExosfera] = useState(false);
   const [workLeroyMerlin, setWorkLeroyMerlin] = useState(false);
+  const [smartSolutions, setSmartSolutions] = useState(false);
 
+  const handleSmartSolutions = () => {
+    setWorkGtGroup(false);
+    setWorkEquiplano(false);
+    setWorkMzTech(false);
+    setWorkWlabs(false);
+    setWorkExosfera(false);
+    setWorkLeroyMerlin(false);
+    setSmartSolutions(true);
+  };
   const handleGtGroup = () => {
     setWorkGtGroup(true);
     setWorkEquiplano(false);
@@ -22,6 +33,7 @@ const Experience = () => {
     setWorkWlabs(false);
     setWorkExosfera(false);
     setWorkLeroyMerlin(false);
+    setSmartSolutions(false);
   };
 
   const handleEquiplano = () => {
@@ -31,6 +43,7 @@ const Experience = () => {
     setWorkWlabs(false);
     setWorkExosfera(false);
     setWorkLeroyMerlin(false);
+    setSmartSolutions(false);
   };
 
   const handleMzTech = () => {
@@ -40,6 +53,7 @@ const Experience = () => {
     setWorkWlabs(false);
     setWorkExosfera(false);
     setWorkLeroyMerlin(false);
+    setSmartSolutions(false);
   };
 
   const handleWlabs = () => {
@@ -49,6 +63,7 @@ const Experience = () => {
     setWorkWlabs(true);
     setWorkExosfera(false);
     setWorkLeroyMerlin(false);
+    setSmartSolutions(false);
   };
 
   const handleExosfera = () => {
@@ -58,6 +73,7 @@ const Experience = () => {
     setWorkWlabs(false);
     setWorkExosfera(true);
     setWorkLeroyMerlin(false);
+    setSmartSolutions(false);
   };
 
   const handleLeroyMerlin = () => {
@@ -67,6 +83,7 @@ const Experience = () => {
     setWorkWlabs(false);
     setWorkExosfera(false);
     setWorkLeroyMerlin(true);
+    setSmartSolutions(false);
   };
 
   return (
@@ -78,6 +95,16 @@ const Experience = () => {
       <div className="w-full mt-6 sm:mt-8 md:mt-10 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16">
         <div className="w-full md:w-1/2 p-2 sm:p-4 min-w-[200px] md:min-w-0 overflow-x-auto md:overflow-visible">
           <ul className="w-full md:w-32 flex flex-row md:flex-col gap-0">
+          <li
+              onClick={handleSmartSolutions}
+              className={`${
+                smartSolutions
+                  ? "border-l-textGreen text-textGreen bg-hoverColor"
+                  : "border-l-textDark/30 text-textDark"
+              } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
+            >
+              SmartSolutions
+            </li>
             <li
               onClick={handleLeroyMerlin}
               className={`${
@@ -141,6 +168,7 @@ const Experience = () => {
           </ul>
         </div>
         <div className="w-full md:w-1/2 p-2 sm:p-4 mt-4 md:mt-0">
+          {smartSolutions && <SmartSolutions />}
           {workLeroyMerlin && <LeroyMerlin />}
           {workGtGroup && <GtGroup />}
           {workExosfera && <Exosfera />}
