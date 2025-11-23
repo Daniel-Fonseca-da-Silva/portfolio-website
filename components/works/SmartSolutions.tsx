@@ -20,7 +20,7 @@ const SmartSolutions = () => {
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          I work on the development and continuous improvement of a CMS project responsible for supporting high-visibility digital content and campaigns at one of Portugal's largest telecommunications groups.
+          I work on the development and continuous improvement of a CMS project responsible for supporting high-visibility digital content and campaigns at one of Portugal&apos;s largest telecommunications groups.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
