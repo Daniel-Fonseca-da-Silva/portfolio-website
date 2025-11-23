@@ -10,7 +10,7 @@ const SmartSolutions = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
-        System Engineer
+        System Architect
       </h3>
       <p className="text-sm md:text-lg mt-1 font-medium text-textDark">
         Oct 2025 - Present

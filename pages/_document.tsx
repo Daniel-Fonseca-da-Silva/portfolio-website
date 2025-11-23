@@ -4,6 +4,23 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions." />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Daniel Fonseca da Silva" />
+        <meta property="og:description" content="A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions." />
+        <meta property="og:image" content="/assets/images/open-graph-daniel.png" />
+        <meta property="og:url" content="https://www.daniel-fonseca.online/" />
+        <meta property="og:site_name" content="Daniel Fonseca da Silva - Portfolio" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Daniel Fonseca da Silva" />
+        <meta name="twitter:description" content="A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions." />
+        <meta name="twitter:image" content="/assets/images/open-graph-daniel.png" />
+        
         <link rel="icon" href="/assets/images/logo.png" />
         <link rel="shortcut icon" href="/assets/images/logo.png" />
         <link rel="apple-touch-icon" href="/assets/images/logo.png" />

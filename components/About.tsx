@@ -14,10 +14,10 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
         <div className="w-full lg:w-2/3 text-base sm:text-lg text-textDark font-normal flex flex-col gap-4 sm:gap-6">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-2 sm:mt-4 mb-3 sm:mb-4">
-          System Engineer
+          System Architect
           </h3>
           <p>
-            Software Engineer with over 10 years of experience, specialized in initiating and developing{" "}
+            A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions.{" "}
             <span className="text-textGreen">projects from scratch</span> for companies, transforming ideas into{" "}
             <span className="text-textGreen">complete and scalable systems</span>. Founder and independent developer, I work on creating{" "}
             <span className="text-textGreen">original software and digital solutions</span> from conception to delivery, combining{" "}

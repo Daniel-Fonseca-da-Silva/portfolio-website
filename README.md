@@ -17,7 +17,7 @@ A modern, responsive portfolio website showcasing professional experience, proje
 
 ## 🎯 Overview
 
-This portfolio website serves as a comprehensive digital showcase for Daniel Fonseca da Silva, a System Engineer specialising in FullStack Development, System Architecture, and Cloud Infrastructure. The site presents professional experience, featured projects, technical skills, and contact information through an elegant, modern interface.
+This portfolio website serves as a comprehensive digital showcase for Daniel Fonseca da Silva, a System Architect specialising in FullStack Development, System Architecture, and Cloud Infrastructure. The site presents professional experience, featured projects, technical skills, and contact information through an elegant, modern interface.
 
 ## 🎨 Purpose
 
@@ -343,7 +343,7 @@ This project is private and proprietary.
 ## 👤 Author
 
 **Daniel Fonseca da Silva**
-- System Engineer
+- System architect
 - FullStack Developer
 - Specialising in Backend Architecture, Cloud Infrastructure, and DevOps
 

@@ -22,7 +22,7 @@ const Banner = () => {
       >
         <span className="gradient-text">Daniel Fonseca</span>
         <span className="text-textLight mt-2 sm:mt-3 lg:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-          System Engineer
+          System Architect
         </span>
       </motion.h1>
       <motion.p
@@ -31,7 +31,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base sm:text-lg md:max-w-[700px] text-textDark font-normal leading-relaxed mt-4 sm:mt-6"
       >
-        System Engineer with more than 10 years of experience transforming complex challenges into scalable solutions. Founder & CTO of Dafon Online, where we help companies reduce infrastructure costs by up to 60% while improving performance.{" "}
+        A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions. Founder & CTO of Dafon Online, where I help companies cut IT costs by up to 60% while improving performance and security.{" "}
         <a href="https://www.linkedin.com/in/daniel-fonseca-da-silva/" target="_blank" className="text-textGreen hover:text-textGreenHover transition-colors duration-300 inline-flex items-center gap-1 group">
           <span className="relative">
             Know more
