@@ -4,6 +4,9 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="icon" href="/assets/images/logo.png" />
+        <link rel="shortcut icon" href="/assets/images/logo.png" />
+        <link rel="apple-touch-icon" href="/assets/images/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
