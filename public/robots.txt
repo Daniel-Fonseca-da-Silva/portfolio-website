@@ -1,0 +1,45 @@
+# https://www.robotstxt.org/robotstxt.html
+
+# Default rules for all bots
+User-agent: *
+Allow: /
+
+# Disallow crawling of API routes
+Disallow: /api/
+
+# Disallow crawling of Next.js internal files
+Disallow: /_next/static/
+Disallow: /_next/image
+
+# Allow crawling of public assets
+Allow: /assets/
+Allow: /images/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+# Google Bot specific rules
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+
+# Google Image Bot
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /images/
+
+# Bing Bot specific rules
+User-agent: Bingbot
+Allow: /
+Disallow: /api/
+
+# Crawl delay (optional - uncomment if needed)
+# Crawl-delay: 10
+
+# Sitemaps
+Sitemap: https://www.daniel-fonseca.online/sitemap.xml

@@ -1,0 +1,5 @@
+Contact: mailto:dafondeveloper@gmail.com
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en, pt-EU
+Canonical: https://www.daniel-fonseca.online/.well-known/security.txt
+
