@@ -7,16 +7,14 @@ import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import RightSide from "@/components/RightSide";
+import SEO from "@/components/SEO";
 import SubFooter from "@/components/SubFooter";
 import { motion } from "framer-motion";
-import Head from "next/head";
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Daniel Fonseca da Silva</title>
-      </Head>
+      <SEO />
       <main className="w-full min-h-screen font-bodyFont gradient-bg text-textLight overflow-x-hidden scrollbar">
         <Navbar />
         <div className="w-full xl:flex items-center gap-20 justify-between">
