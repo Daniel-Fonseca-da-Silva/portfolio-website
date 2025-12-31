@@ -5,6 +5,7 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import LeftSide from "@/components/LeftSide";
 import Navbar from "@/components/Navbar";
+import OrganizationSchema from "@/components/OrganizationSchema";
 import Projects from "@/components/Projects";
 import RightSide from "@/components/RightSide";
 import SEO from "@/components/SEO";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <>
       <SEO />
+      <OrganizationSchema />
       <main className="w-full min-h-screen font-bodyFont gradient-bg text-textLight overflow-x-hidden scrollbar">
         <Navbar />
         <div className="w-full xl:flex items-center gap-20 justify-between">

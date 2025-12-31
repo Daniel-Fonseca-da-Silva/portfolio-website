@@ -14,10 +14,75 @@ const SEO = ({
   description = "A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions.",
   image = "/assets/images/open-graph-daniel.png",
   url = "https://www.daniel-fonseca.online",
-  keywords = "Daniel Fonseca, Systems Architect, Full Stack Developer, Software Engineer, Portfolio, React, Next.js, TypeScript",
+  keywords = "Daniel Fonseca, Systems Architect, Full Stack Developer, Software Engineer, CEO Dafon, Tech Lead, DafonCV Creator, AI CV Platform, SaaS Developer, Portfolio, React, Next.js, TypeScript, Golang, NestJS, Cloud Infrastructure, AWS, Docker, Kubernetes, Microservices, RESTful API, System Design, Portugal Developer, Lisbon Developer, Backend Developer, Frontend Developer, Entrepreneur, Startup Founder",
   type = "website",
 }: SEOProps) => {
   const fullImageUrl = image.startsWith("http") ? image : `${url}${image}`;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Daniel Fonseca da Silva",
+    "url": url,
+    "image": fullImageUrl,
+    "jobTitle": ["Systems Architect", "Full Stack Developer", "CEO at Dafon", "Tech Lead"],
+    "description": description,
+    "email": "dafondeveloper@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lisbon",
+      "addressCountry": "PT"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/daniel-fonseca-da-silva",
+      "https://github.com/Daniel-Fonseca-da-Silva",
+      "https://www.dafon.online",
+      "https://www.dafoncv.online"
+    ],
+    "founder": {
+      "@type": "Organization",
+      "name": "Dafon",
+      "url": "https://www.dafon.online",
+      "description": "Innovative solutions company delivering transformative technology services"
+    },
+    "creator": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "DafonCV",
+        "url": "https://www.dafoncv.online",
+        "applicationCategory": "BusinessApplication",
+        "description": "AI-powered CV creation platform",
+        "operatingSystem": "Web"
+      }
+    ],
+    "knowsAbout": [
+      "System Architecture",
+      "Full Stack Development",
+      "Cloud Infrastructure",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Golang",
+      "Docker",
+      "Java",
+      "Spring",
+      "Grafana",
+      "Prometheus",
+      "Kubernetes",
+      "AWS",
+      "Microservices",
+      "RESTful API",
+      "System Design",
+      "SaaS Development",
+      "AI Integration",
+      "Backend Development",
+      "Frontend Development",
+      "Software Engineering",
+      "Software Architecture",
+      "Tech Leadership",
+      "Entrepreneurship"
+    ]
+  };
 
   return (
     <Head>
@@ -32,6 +97,12 @@ const SEO = ({
       <meta name="language" content="English" />
       <meta name="robots" content="index, follow" />
       <meta name="googlebot" content="index, follow" />
+      
+      {/* Structured Data (JSON-LD) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
@@ -63,4 +134,3 @@ const SEO = ({
 };
 
 export default SEO;
-
