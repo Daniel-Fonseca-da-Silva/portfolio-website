@@ -15,7 +15,7 @@ export default async function handler(
     const routes = await getAllRoutes();
     const sitemap = generateSitemapXml(routes);
 
-    res.setHeader('Content-Type', 'application/xml');
+    res.setHeader('Content-Type', 'application/xml; charset=utf-8');
     res.setHeader('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate');
     res.status(200).send(sitemap);
   } catch (error) {

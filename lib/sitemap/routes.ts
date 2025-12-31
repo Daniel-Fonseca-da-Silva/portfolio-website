@@ -8,16 +8,37 @@ export interface Route {
   priority: number;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://danielfonseca.dev';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.daniel-fonseca.online';
 
 export async function getAllRoutes(): Promise<Route[]> {
   const routes: Route[] = [];
-  const pagesDirectory = path.join(process.cwd(), 'pages');
+  
+  try {
+    const pagesDirectory = path.join(process.cwd(), 'pages');
+    
+    if (fs.existsSync(pagesDirectory)) {
+      const staticRoutes = getStaticRoutes(pagesDirectory);
+      routes.push(...staticRoutes);
+    }
+  } catch (error) {
+    console.error('Error reading pages directory:', error);
+  }
 
-  const staticRoutes = getStaticRoutes(pagesDirectory);
-  routes.push(...staticRoutes);
+  // Fallback: se não encontrou rotas, adiciona pelo menos a home
+  if (routes.length === 0) {
+    routes.push(createDefaultRoute());
+  }
 
   return routes;
+}
+
+function createDefaultRoute(): Route {
+  return {
+    path: '/',
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 1.0,
+  };
 }
 
 function getStaticRoutes(directory: string, baseRoute: string = ''): Route[] {
