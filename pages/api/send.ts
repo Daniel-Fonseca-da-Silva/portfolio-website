@@ -9,6 +9,7 @@ interface ContactFormData {
   name: string;
   email: string;
   subject: string;
+  message: string;
   turnstileToken: string;
 }
 
@@ -49,7 +50,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
-    const { name, email, subject, turnstileToken }: ContactFormData = req.body;
+    const { name, email, subject, message, turnstileToken }: ContactFormData = req.body;
     const mailFrom = process.env.MAIL_FROM;
     const resendApiKey = process.env.RESEND_API_KEY;
 
@@ -57,8 +58,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(500).json({ error: 'RESEND_API_KEY environment variable is not configured' });
     }
 
-    if (!name || !email || !subject) {
+    if (!name || !email || !subject || !message) {
       return res.status(400).json({ error: 'All fields are required' });
+    }
+
+    if (message.trim().length < 10) {
+      return res.status(400).json({ error: 'Message must be at least 10 characters long' });
     }
 
     if (!turnstileToken) {
@@ -79,7 +84,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(500).json({ error: 'MAIL_TO environment variable is not configured' });
     }
 
-    const emailHtml = await render(EmailTemplate({ name, email, subject }));
+    const emailHtml = await render(EmailTemplate({ name, email, subject, message }));
 
     const { data, error } = await resend.emails.send({
       from: mailFrom,

@@ -4,12 +4,14 @@ interface FormData {
   name: string;
   email: string;
   subject: string;
+  message: string;
 }
 
 interface FormErrors {
   name?: string;
   email?: string;
   subject?: string;
+  message?: string;
   turnstile?: string;
 }
 
@@ -33,6 +35,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     subject: '',
+    message: '',
   });
 
   const [errors, setErrors] = useState<FormErrors>({});
@@ -119,6 +122,12 @@ const ContactForm = () => {
       newErrors.subject = 'Subject is required';
     }
 
+    if (!formData.message.trim()) {
+      newErrors.message = 'Message is required';
+    } else if (formData.message.trim().length < 10) {
+      newErrors.message = 'Message must be at least 10 characters long';
+    }
+
     if (!turnstileToken) {
       newErrors.turnstile = 'Please complete the verification';
     }
@@ -182,6 +191,7 @@ const ContactForm = () => {
         name: '',
         email: '',
         subject: '',
+        message: '',
       });
       resetTurnstile();
     } catch (error) {
@@ -254,19 +264,39 @@ const ContactForm = () => {
           <label htmlFor="subject" className="font-titleFont text-sm text-textLight">
             Subject
           </label>
-          <textarea
+          <input
+            type="text"
             id="subject"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            rows={5}
             className={`w-full px-4 py-3 rounded-lg bg-[#112240] border ${
               errors.subject ? 'border-red-500' : 'border-textGreen/20'
-            } text-textLight focus:outline-none focus:border-textGreen transition-colors resize-none`}
-            placeholder="Describe the subject of your message..."
+            } text-textLight focus:outline-none focus:border-textGreen transition-colors`}
+            placeholder="What's this about?"
           />
           {errors.subject && (
             <span className="text-red-500 text-sm">{errors.subject}</span>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <label htmlFor="message" className="font-titleFont text-sm text-textLight">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            rows={8}
+            className={`w-full px-4 py-3 rounded-lg bg-[#112240] border ${
+              errors.message ? 'border-red-500' : 'border-textGreen/20'
+            } text-textLight focus:outline-none focus:border-textGreen transition-colors resize-none`}
+            placeholder="Tell me about your project, role or how I can help your business..."
+          />
+          {errors.message && (
+            <span className="text-red-500 text-sm">{errors.message}</span>
           )}
         </div>
 
