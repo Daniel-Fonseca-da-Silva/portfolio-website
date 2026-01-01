@@ -14,11 +14,11 @@ export async function getAllRoutes(): Promise<Route[]> {
   const routes: Route[] = [];
   
   try {
-    const pagesDirectory = path.join(process.cwd(), 'pages');
-    
+  const pagesDirectory = path.join(process.cwd(), 'pages');
+
     if (fs.existsSync(pagesDirectory)) {
-      const staticRoutes = getStaticRoutes(pagesDirectory);
-      routes.push(...staticRoutes);
+  const staticRoutes = getStaticRoutes(pagesDirectory);
+  routes.push(...staticRoutes);
     }
   } catch (error) {
     console.error('Error reading pages directory:', error);
