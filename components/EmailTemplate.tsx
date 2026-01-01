@@ -10,7 +10,7 @@ export function EmailTemplate({ name, email, subject }: EmailTemplateProps) {
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', maxWidth: '600px' }}>
       <h1 style={{ color: '#333', borderBottom: '2px solid #4CAF50', paddingBottom: '10px' }}>
-        New contact message
+        New Email From Daniel Fonseca Portfolio
       </h1>
       <div style={{ marginTop: '20px' }}>
         <p style={{ margin: '10px 0' }}>
