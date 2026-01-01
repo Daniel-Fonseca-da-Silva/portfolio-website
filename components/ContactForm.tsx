@@ -1,4 +1,4 @@
-import { useState, FormEvent, ChangeEvent } from 'react';
+import { useState, FormEvent, ChangeEvent, useRef, useEffect } from 'react';
 
 interface FormData {
   name: string;
@@ -10,6 +10,22 @@ interface FormErrors {
   name?: string;
   email?: string;
   subject?: string;
+  turnstile?: string;
+}
+
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (element: string | HTMLElement, options: {
+        sitekey: string;
+        callback?: (token: string) => void;
+        'error-callback'?: () => void;
+        'expired-callback'?: () => void;
+      }) => string;
+      reset: (widgetId: string) => void;
+      remove: (widgetId: string) => void;
+    };
+  }
 }
 
 const ContactForm = () => {
@@ -22,6 +38,69 @@ const ContactForm = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [turnstileToken, setTurnstileToken] = useState<string>('');
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+    
+    if (!siteKey) {
+      console.error('NEXT_PUBLIC_TURNSTILE_SITE_KEY is not configured');
+      return;
+    }
+
+    const loadTurnstile = () => {
+      if (window.turnstile && turnstileRef.current && !widgetIdRef.current) {
+        widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
+          sitekey: siteKey,
+          callback: (token: string) => {
+            setTurnstileToken(token);
+            if (errors.turnstile) {
+              setErrors(prev => ({
+                ...prev,
+                turnstile: undefined,
+              }));
+            }
+          },
+          'error-callback': () => {
+            setTurnstileToken('');
+            setErrors(prev => ({
+              ...prev,
+              turnstile: 'Error loading verification. Please refresh the page.',
+            }));
+          },
+          'expired-callback': () => {
+            setTurnstileToken('');
+            setErrors(prev => ({
+              ...prev,
+              turnstile: 'Verification expired. Please verify again.',
+            }));
+          },
+        });
+      }
+    };
+
+    if (window.turnstile) {
+      loadTurnstile();
+    } else {
+      const checkTurnstile = setInterval(() => {
+        if (window.turnstile) {
+          loadTurnstile();
+          clearInterval(checkTurnstile);
+        }
+      }, 100);
+
+      return () => clearInterval(checkTurnstile);
+    }
+
+    return () => {
+      if (widgetIdRef.current && window.turnstile) {
+        window.turnstile.remove(widgetIdRef.current);
+        widgetIdRef.current = null;
+      }
+    };
+  }, [errors.turnstile]);
 
   const validateForm = (): boolean => {
     const newErrors: FormErrors = {};
@@ -38,6 +117,10 @@ const ContactForm = () => {
 
     if (!formData.subject.trim()) {
       newErrors.subject = 'Subject is required';
+    }
+
+    if (!turnstileToken) {
+      newErrors.turnstile = 'Please complete the verification';
     }
 
     setErrors(newErrors);
@@ -59,6 +142,13 @@ const ContactForm = () => {
     }
   };
 
+  const resetTurnstile = () => {
+    if (widgetIdRef.current && window.turnstile) {
+      window.turnstile.reset(widgetIdRef.current);
+      setTurnstileToken('');
+    }
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     
@@ -75,7 +165,10 @@ const ContactForm = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          turnstileToken,
+        }),
       });
 
       if (!response.ok) {
@@ -90,9 +183,11 @@ const ContactForm = () => {
         email: '',
         subject: '',
       });
+      resetTurnstile();
     } catch (error) {
       console.error('Submit error:', error);
       setSubmitStatus('error');
+      resetTurnstile();
     } finally {
       setIsSubmitting(false);
     }
@@ -175,6 +270,13 @@ const ContactForm = () => {
           )}
         </div>
 
+        <div className="flex flex-col gap-2">
+          <div ref={turnstileRef} className="flex justify-center" />
+          {errors.turnstile && (
+            <span className="text-red-500 text-sm text-center">{errors.turnstile}</span>
+          )}
+        </div>
+
         {submitStatus === 'success' && (
           <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/50 text-green-500 text-center">
             Message sent successfully!
@@ -210,4 +312,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-

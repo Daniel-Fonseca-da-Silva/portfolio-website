@@ -19,6 +19,13 @@ export default function Document() {
         
         {/* Theme Color */}
         <meta name="theme-color" content="#0a192f" />
+        
+        {/* Cloudflare Turnstile */}
+        <script
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+          async
+          defer
+        />
       </Head>
       <body>
         <Main />
