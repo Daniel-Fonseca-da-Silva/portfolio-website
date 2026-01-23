@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { TbArrowForwardUp } from "react-icons/tb";
 
-const SmartSolutions = () => {
+const Meo = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -28,11 +28,13 @@ const SmartSolutions = () => {
           </span>
           Key Projects:
 
-          CMS Platform: A centralized content management system designed to support digital content and campaigns with high visibility across multiple sectors. The solution enables agile activation and updating of campaigns and content for government, automotive, financial and retail sectors, as well as high-impact public initiatives like global events. The platform allows internal teams to manage and publish content quickly, securely, centrally and in a highly standardized manner, reducing operational times and increasing delivery reliability.
+          CMS Renault: A centralized content management system (CMS) tailored to power Renault digital ecosystem and high-visibility marketing campaigns. The solution enables agile activation and real-time updates for vehicle launches, promotional offers, and brand content across the dealer network and digital platforms.
+          
+          Madeira Island: A centralized system for managing government subsidies in Madeira Island. The platform automates document import and analysis, detects fraud, and validates citizen eligibility based on their government contributions.'
         </li>
       </ul>
     </motion.div>
   );
 };
 
-export default SmartSolutions;
+export default Meo;
