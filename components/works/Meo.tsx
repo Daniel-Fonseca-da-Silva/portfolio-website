@@ -30,7 +30,7 @@ const Meo = () => {
 
           CMS Renault: A centralized content management system (CMS) tailored to power Renault digital ecosystem and high-visibility marketing campaigns. The solution enables agile activation and real-time updates for vehicle launches, promotional offers, and brand content across the dealer network and digital platforms.
           
-          Madeira Island: A centralized system for managing government subsidies in Madeira Island. The platform automates document import and analysis, detects fraud, and validates citizen eligibility based on their government contributions.'
+         Madeira Island: A centralized system for managing government subsidies in Madeira Island. The platform automates document import and analysis, detects fraud, and validates citizen eligibility based on their government contributions.
         </li>
       </ul>
     </motion.div>
