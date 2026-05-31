@@ -289,7 +289,7 @@ const Navbar = () => {
                     initial={{ y: -20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.4, ease: "easeIn" }}
-                    href="http://www.dafon.online/"
+                    href="https://www.dafon.online"
                     target="_blank"
                   >
                     <span className="mr-1 w-12 h-12 text-xl glass rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300 hover:glow-green-hover border border-textGreen/20">

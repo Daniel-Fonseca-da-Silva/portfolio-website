@@ -22,6 +22,7 @@ export default function Document() {
         <link rel="icon" href="/assets/images/logo.png" />
         <link rel="shortcut icon" href="/assets/images/logo.png" />
         <link rel="apple-touch-icon" href="/assets/images/logo.png" />
+        <link rel="author" href="/humans.txt" type="text/plain" />
         
         {/* Fonts */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -22,23 +22,31 @@ const Banner = () => {
       >
         <span className="gradient-text">Daniel Fonseca</span>
         <span className="text-textLight mt-2 sm:mt-3 lg:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-          System Architect
+          Software Engineer & Architect
         </span>
       </motion.h1>
-      <motion.p
+      <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-base sm:text-lg md:max-w-[700px] text-textDark font-normal leading-relaxed mt-4 sm:mt-6"
+        className="text-base sm:text-lg md:max-w-[700px] text-textDark font-normal leading-relaxed mt-4 sm:mt-6 flex flex-col gap-4"
       >
-        A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions. Founder & CTO of Dafon Online, where I help companies cut IT costs by up to 60% while improving performance and security.{" "}
-        <a href="https://www.linkedin.com/in/daniel-fonseca-da-silva/" target="_blank" className="text-textGreen hover:text-textGreenHover transition-colors duration-300 inline-flex items-center gap-1 group">
-          <span className="relative">
-            Know more
-            <span className="absolute w-full h-[2px] bg-gradient-to-r from-textGreen to-accentBlue left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-          </span>
-        </a>
-      </motion.p>
+        <p>
+          For more than ten years I have designed and scaled high-availability systems from the ground up. At enterprise companies such as MEO Altice and Leroy Merlin, I turn demanding business problems into dependable cloud-native platforms on AWS, backed by well-designed REST APIs.
+        </p>
+        <p>
+          I own the full delivery cycle: architecture, secure development, DevOps, and production. I also connect your existing systems with AI agents so integrations stay practical and teams move faster without giving up stability. Go, Python, microservices, REST APIs, and event-driven messaging with RabbitMQ are where I do my strongest work.
+        </p>
+        <p>
+          As Founder and CTO of Dafon Online, I lead engineering and product delivery with the same focus I bring to client work: clear priorities, solid architecture, and digital products built to grow with the business.{" "}
+          <a href="https://www.linkedin.com/in/daniel-fonseca-da-silva/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="text-textGreen hover:text-textGreenHover transition-colors duration-300 inline-flex items-center gap-1 group">
+            <span className="relative">
+              Know more
+              <span className="absolute w-full h-[2px] bg-gradient-to-r from-textGreen to-accentBlue left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
+            </span>
+          </a>
+        </p>
+      </motion.div>
       <motion.div
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -46,7 +54,7 @@ const Banner = () => {
         className="flex flex-col sm:flex-row gap-4 mt-6 sm:mt-8"
       >
         <a
-          href="http://www.dafon.online"
+          href="https://www.dafon.online"
           target="_blank"
           rel="noopener noreferrer"
           className="group relative w-full sm:w-56 h-14 text-sm font-titleFont border-2 border-textGreen rounded-lg text-textGreen tracking-wide hover:bg-hoverColor duration-300 flex items-center justify-center cursor-pointer overflow-hidden glow-green-hover"

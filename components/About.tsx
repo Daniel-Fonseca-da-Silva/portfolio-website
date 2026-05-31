@@ -14,32 +14,36 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
         <div className="w-full lg:w-2/3 text-base sm:text-lg text-textDark font-normal flex flex-col gap-4 sm:gap-6">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-2 sm:mt-4 mb-3 sm:mb-4">
-          System Architect
+            Software Engineer & Architect
           </h3>
           <p>
-            A systems architect with more than 10 years of experience turning complex challenges into scalable, high-impact solutions.{" "}
-            <span className="text-textGreen">projects from scratch</span> for companies, transforming ideas into{" "}
-            <span className="text-textGreen">complete and scalable systems</span>. Founder and independent developer, I work on creating{" "}
-            <span className="text-textGreen">original software and digital solutions</span> from conception to delivery, combining{" "}
-            <span className="text-textGreen">strategic vision</span> with cutting-edge technical execution.
+            For more than ten years I have designed and scaled{" "}
+            <span className="text-textGreen">high-availability systems</span> from the ground up. At enterprise companies such as{" "}
+            <span className="text-textGreen">MEO Altice</span> and <span className="text-textGreen">Leroy Merlin</span>, I turn demanding business problems into dependable{" "}
+            <span className="text-textGreen">cloud-native platforms on AWS</span> backed by{" "}
+            <span className="text-textGreen">well-designed REST APIs</span>. I also build{" "}
+            <span className="text-textGreen">projects from scratch</span> when companies need ideas turned into{" "}
+            <span className="text-textGreen">complete, scalable systems</span> ready for production.
           </p>
           <p>
-            Expert in developing modern systems using the latest market technologies, including{" "}
-            <span className="text-textGreen">Golang</span>, <span className="text-textGreen">Java</span>,{" "}
-            <span className="text-textGreen">Cloud Computing</span>, <span className="text-textGreen">Solidity</span>,{" "}
-            <span className="text-textGreen">Web 3.0</span>, <span className="text-textGreen">Smart Chains</span>, and{" "}
-            <span className="text-textGreen">Microservices</span>. I integrate{" "}
-            <span className="text-textGreen">Artificial Intelligence (AI)</span> into the development process to accelerate{" "}
-            <span className="text-textGreen">product creation</span>, optimize solutions, and deliver{" "}
-            <span className="text-textGreen">innovative systems</span> that generate real value for companies.
+            I cover the <span className="text-textGreen">full delivery cycle</span>:{" "}
+            <span className="text-textGreen">architecture</span>, <span className="text-textGreen">secure development</span>,{" "}
+            <span className="text-textGreen">DevOps</span>, and production. My stack includes{" "}
+            <span className="text-textGreen">Go</span>, <span className="text-textGreen">Python</span>,{" "}
+            <span className="text-textGreen">Java</span>, <span className="text-textGreen">microservices</span>, and{" "}
+            <span className="text-textGreen">REST APIs</span>. I connect existing systems with{" "}
+            <span className="text-textGreen">AI agents</span> so teams ship faster without losing{" "}
+            <span className="text-textGreen">stability</span>. For messaging and async workflows I work with{" "}
+            <span className="text-textGreen">RabbitMQ</span> and <span className="text-textGreen">Google Pub/Sub</span>, and I use{" "}
+            <span className="text-textGreen">Supabase</span> when a secure backend with auth, storage, and real-time data helps the product ship faster.
           </p>
           <p>
-            Results-driven <span className="text-textGreen">technical leader</span> with a proven track record in transforming{" "}
-            <span className="text-textGreen">business challenges</span> into unique digital products. My approach combines{" "}
+            As <span className="text-textGreen">Founder and CTO of Dafon Online</span>, I lead as a{" "}
+            <span className="text-textGreen">technical leader</span> who turns{" "}
+            <span className="text-textGreen">business challenges</span> into digital products built to last. My approach combines{" "}
             <span className="text-textGreen">robust system architecture</span>,{" "}
-            <span className="text-textGreen">agile methodologies (Scrum, Kanban)</span>,{" "}
-            <span className="text-textGreen">DevOps practices</span> and a holistic vision that connects{" "}
-            <span className="text-textGreen">technology, creativity and purpose</span> to create solutions that drive{" "}
+            <span className="text-textGreen">agile methodologies (Scrum, Kanban)</span>, and{" "}
+            <span className="text-textGreen">DevOps practices</span> to deliver solutions that support{" "}
             <span className="text-textGreen">sustainable growth</span> for organizations.
           </p>
           <ul className="max-w-[500px] text-sm sm:text-base font-titleFont grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mt-6 sm:mt-8">
@@ -89,7 +93,7 @@ const About = () => {
               <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              <span>PostGreSQL, MySQL, Redis, OracleDB, MongoDB</span>
+              <span>PostgreSQL, Supabase, MySQL, Redis, MongoDB</span>
             </li>
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
               <span className="text-textGreen text-lg">
@@ -105,20 +109,29 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full lg:w-1/3 h-64 sm:h-72 md:h-80 relative group mx-auto lg:mx-0">
-          <div className="absolute w-full h-64 sm:h-72 md:h-80 -left-4 sm:-left-6 md:-left-8 -top-4 sm:-top-6 md:-top-8 rounded-xl overflow-hidden">
-            <div className="w-full h-full relative z-20 flex pl-4 sm:pl-6 md:pl-8 lg:pl-0">
+        <div className="w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-none lg:w-1/3 shrink-0 relative group mx-auto lg:mx-0">
+          <div className="relative aspect-square w-full">
+            <div
+              className="hidden lg:block absolute inset-0 border-2 border-textGreen rounded-xl -translate-x-2 -translate-y-2 group-hover:-translate-x-4 group-hover:-translate-y-4 transition-transform duration-300 glow-green-hover pointer-events-none"
+              aria-hidden
+            />
+            <div
+              className="lg:hidden absolute top-0 left-0 w-[calc(100%-1rem)] h-[calc(100%-1rem)] sm:w-[calc(100%-1.5rem)] sm:h-[calc(100%-1.5rem)] md:w-[calc(100%-2rem)] md:h-[calc(100%-2rem)] border-2 border-textGreen rounded-xl pointer-events-none"
+              aria-hidden
+            />
+            <div className="relative z-10 w-[calc(100%-1rem)] sm:w-[calc(100%-1.5rem)] md:w-[calc(100%-2rem)] lg:w-full ml-4 sm:ml-6 md:ml-8 lg:ml-0 aspect-square">
               <div className="relative w-full h-full rounded-xl overflow-hidden">
                 <Image
-                  className="rounded-xl h-full w-full object-cover"
+                  fill
+                  className="rounded-xl object-cover object-center"
                   src={profileImg}
-                  alt="profileImg"
+                  alt="Daniel Fonseca - Software Engineer & Architect"
+                  sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-textGreen/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-textGreen/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </div>
           </div>
-          <div className="hidden lg:inline-flex absolute w-full h-64 sm:h-72 md:h-80 border-2 border-textGreen rounded-xl group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300 glow-green-hover"></div>
         </div>
       </div>
     </section>

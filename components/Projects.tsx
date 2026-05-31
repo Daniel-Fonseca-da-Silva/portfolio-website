@@ -1,6 +1,7 @@
-import {dafonCvBanner, dafonpdfExtractor, dafoSite } from "@/public/assets";
+import {dafonCvBanner, techcuisineBanner, dafonBanner } from "@/public/assets";
 import SectiontTitle from "./SectiontTitle";
 import Image from "next/image";
+import Link from "next/link";
 import { BsGithub, BsLinkedin, BsGlobeAmericas } from "react-icons/bs";
 
 const Projects = () => {
@@ -13,54 +14,52 @@ const Projects = () => {
           <div className="flex flex-col xl:flex-row gap-6">
             <a
               className="w-full xl:w-1/2 h-auto relative group"
-              href="https://github.com/Daniel-Fonseca-da-Silva/Dafon-PDF-Extractor-API"
+              href="https://www.techcuisine.online"
               target="_blank"
             >
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={dafonpdfExtractor}
-                  alt="Dafon PDF Extractor API image"
+                  src={techcuisineBanner}
+                  alt="TechCuisine banner image"
                 />
               </div>
             </a>
             <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right xl:-ml-16 z-10 mt-4 xl:mt-0">
               <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
-                API
+                SaaS
               </p>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">PDF Extractor API</h3>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">TechCuisine</h3>
               <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
-              This API processes PDF documents to identify and extract company names, NIFs (Portuguese Tax Identification Numbers), and related data.
+              Know your real cost before the dish leaves the kitchen. TechCuisine is an AI-powered platform that builds smart recipe sheets with yield-corrected costing, menu engineering, batch scaling, and supplier insights — so every dish is priced for profit, not guesswork.
               </p>
               <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Restfull API</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Python</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Swagger</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Docker</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Next</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">MongoDB</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="https://github.com/Daniel-Fonseca-da-Silva/Landing-Page-Template-Astronomy"
-                  target="_blank"
-                >
-                  <BsGithub />
-                </a>
-                <a
-                  className="hover:text-textGreen duration-300"
-                  href=""
+                  href="https://www.techcuisine.online"
                   target="_blank"
                 >
                   <BsGlobeAmericas />
                 </a>
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="https://www.linkedin.com/company/dafon-sistemas"
+                  href="https://www.linkedin.com/company/tech-cuisine-ai"
                   target="_blank"
                 >
                   <BsLinkedin />
                 </a>
               </div>
+              <Link
+                href="/projects/techcuisine"
+                className="text-sm text-textGreen hover:text-textGreenHover transition-colors duration-300 underline underline-offset-4"
+              >
+                View project details →
+              </Link>
             </div>
           </div>
         </div>
@@ -105,19 +104,25 @@ const Projects = () => {
                 </a>
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="https://www.dafoncv.online"
+                  href="https://www.dafoncv.com"
                   target="_blank"
                 >
                   <BsGlobeAmericas />
                 </a>
                 <a
                   className="hover:text-textGreen duration-300"
-                  href="https://www.linkedin.com/company/dafon-sistemas"
+                  href="https://www.linkedin.com/company/dafoncv/"
                   target="_blank"
                 >
                   <BsLinkedin />
                 </a>
               </div>
+              <Link
+                href="/projects/dafoncv"
+                className="text-sm text-textGreen hover:text-textGreenHover transition-colors duration-300 underline underline-offset-4"
+              >
+                View project details →
+              </Link>
             </div>
           </div>
         </div>
@@ -132,8 +137,8 @@ const Projects = () => {
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={dafoSite}
-                  alt="Dafon website image"
+                  src={dafonBanner}
+                  alt="Dafon website banner"
                 />
               </div>
             </a>
@@ -143,22 +148,14 @@ const Projects = () => {
               </p>
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Dafon</h3>
               <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
-              The Dafon Website is a modern and responsive web application developed to present Dafon company, its innovative solutions, projects, locations, and contact information. The site was built with a focus on performance, SEO, accessibility, and user experience.
+              We build modern software solutions powered by AI and cloud. The Dafon corporate site is the digital front door for a company that delivers scalable, secure systems — web apps, mobile, enterprise platforms, and APIs — with agile delivery and end-to-end support from idea to launch.
               </p>
               <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Landing Page</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NextJS</li>
-                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">TypeScript</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Next</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Prisma</li>
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Tailwind</li>
               </ul>
               <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
-                <a
-                  className="hover:text-textGreen duration-300"
-                  href="https://github.com/Daniel-Fonseca-da-Silva/dafon-site"
-                  target="_blank"
-                >
-                  <BsGithub />
-                </a>
                 <a
                   className="hover:text-textGreen duration-300"
                   href="https://www.dafon.online"
@@ -174,6 +171,12 @@ const Projects = () => {
                   <BsLinkedin />
                 </a>
               </div>
+              <Link
+                href="/projects/dafon-website"
+                className="text-sm text-textGreen hover:text-textGreenHover transition-colors duration-300 underline underline-offset-4"
+              >
+                View project details →
+              </Link>
             </div>
           </div>
         </div>

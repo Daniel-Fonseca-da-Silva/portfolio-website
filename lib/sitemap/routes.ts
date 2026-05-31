@@ -1,5 +1,5 @@
-import fs from 'fs';
-import path from 'path';
+import { SITE_URL } from '@/lib/site-config';
+import { PROJECT_SLUGS, SKILL_SLUGS } from './static-routes';
 
 export interface Route {
   path: string;
@@ -8,139 +8,34 @@ export interface Route {
   priority: number;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.daniel-fonseca.online';
-
 export async function getAllRoutes(): Promise<Route[]> {
-  const routes: Route[] = [];
-  
-  try {
-  const pagesDirectory = path.join(process.cwd(), 'pages');
+  const now = new Date();
 
-    if (fs.existsSync(pagesDirectory)) {
-  const staticRoutes = getStaticRoutes(pagesDirectory);
-  routes.push(...staticRoutes);
-    }
-  } catch (error) {
-    console.error('Error reading pages directory:', error);
+  const routes: Route[] = [
+    { path: '/', lastModified: now, changeFrequency: 'weekly', priority: 1.0 },
+  ];
+
+  for (const slug of PROJECT_SLUGS) {
+    routes.push({
+      path: `/projects/${slug}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    });
   }
 
-  // Fallback: se não encontrou rotas, adiciona pelo menos a home
-  if (routes.length === 0) {
-    routes.push(createDefaultRoute());
-  }
-
-  return routes;
-}
-
-function createDefaultRoute(): Route {
-  return {
-    path: '/',
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 1.0,
-  };
-}
-
-function getStaticRoutes(directory: string, baseRoute: string = ''): Route[] {
-  const routes: Route[] = [];
-  const entries = fs.readdirSync(directory, { withFileTypes: true });
-
-  for (const entry of entries) {
-    const fullPath = path.join(directory, entry.name);
-    
-    if (shouldIgnoreEntry(entry.name)) {
-      continue;
-    }
-
-    if (entry.isDirectory()) {
-      const nestedRoutes = getStaticRoutes(fullPath, `${baseRoute}/${entry.name}`);
-      routes.push(...nestedRoutes);
-      continue;
-    }
-
-    if (entry.isFile() && isValidPageFile(entry.name)) {
-      const route = createRouteFromFile(entry.name, baseRoute, fullPath);
-      if (route) {
-        routes.push(route);
-      }
-    }
+  for (const skill of SKILL_SLUGS) {
+    routes.push({
+      path: `/skills/${skill}`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    });
   }
 
   return routes;
-}
-
-function shouldIgnoreEntry(name: string): boolean {
-  const ignorePatterns = ['api', '_app', '_document', '_error', '404', '500'];
-  return ignorePatterns.some(pattern => name.startsWith(pattern));
-}
-
-function isValidPageFile(filename: string): boolean {
-  const validExtensions = ['.tsx', '.ts', '.jsx', '.js'];
-  return validExtensions.some(ext => filename.endsWith(ext));
-}
-
-function createRouteFromFile(
-  filename: string,
-  baseRoute: string,
-  fullPath: string
-): Route | null {
-  const routePath = getRoutePathFromFilename(filename, baseRoute);
-  const stats = fs.statSync(fullPath);
-  
-  return {
-    path: routePath,
-    lastModified: stats.mtime,
-    changeFrequency: determineChangeFrequency(routePath),
-    priority: determinePriority(routePath),
-  };
-}
-
-function getRoutePathFromFilename(filename: string, baseRoute: string): string {
-  const nameWithoutExtension = filename
-    .replace(/\.(tsx|ts|jsx|js)$/, '')
-    .replace(/\[([^\]]+)\]/g, ':$1');
-
-  if (nameWithoutExtension === 'index') {
-    return baseRoute || '/';
-  }
-
-  return `${baseRoute}/${nameWithoutExtension}`;
-}
-
-function determineChangeFrequency(
-  path: string
-): 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' {
-  if (path === '/') {
-    return 'weekly';
-  }
-  
-  if (path.includes('blog') || path.includes('news')) {
-    return 'daily';
-  }
-  
-  if (path.includes('projects') || path.includes('portfolio')) {
-    return 'weekly';
-  }
-  
-  return 'monthly';
-}
-
-function determinePriority(path: string): number {
-  if (path === '/') {
-    return 1.0;
-  }
-  
-  if (path.includes('about') || path.includes('contact')) {
-    return 0.8;
-  }
-  
-  if (path.includes('projects') || path.includes('portfolio')) {
-    return 0.8;
-  }
-  
-  return 0.6;
 }
 
 export function getBaseUrl(): string {
-  return BASE_URL;
+  return SITE_URL;
 }

@@ -26,7 +26,7 @@ const Footer = () => {
           <BsLinkedin />
         </span>
       </a>
-      <a href="http://www.dafon.online/" target="_blank">
+      <a href="https://www.dafon.online" target="_blank" rel="noopener noreferrer">
         <span className="w-12 h-12 text-xl glass rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300 hover:glow-green-hover border border-textGreen/20">
           <BsGlobeAmericas />
         </span>

@@ -1,87 +1,87 @@
 import { useState } from "react";
 import SectiontTitle from "./SectiontTitle";
-import GtGroup from "./works/GtGroup";
+import Grownt from "./works/Grownt";
 import Equiplano from "./works/Equiplano";
 import MzTech from "./works/MzTech";
-import Wlabs from "./works/Wlabs";
-import Exosfera from "./works/Exosfera";
+import Alterdata from "./works/Alterdata";
+import ZeroEmissionsWorld from "./works/ZeroEmissionsWorld";
 import LeroyMerlin from "./works/LeroyMerlin";
 import Meo from "./works/Meo";
 
 const Experience = () => {
-  const [workGtGroup, setWorkGtGroup] = useState(false);
+  const [workGrownt, setWorkGrownt] = useState(false);
   const [workEquiplano, setWorkEquiplano] = useState(false);
   const [workMzTech, setWorkMzTech] = useState(false);
-  const [workWlabs, setWorkWlabs] = useState(false);
-  const [workExosfera, setWorkExosfera] = useState(false);
+  const [workAlterdata, setWorkAlterdata] = useState(false);
+  const [workZeroEmissionsWorld, setWorkZeroEmissionsWorld] = useState(false);
   const [workLeroyMerlin, setWorkLeroyMerlin] = useState(false);
   const [meo, setMeo] = useState(false);
 
   const handleMeo = () => {
-    setWorkGtGroup(false);
+    setWorkGrownt(false);
     setWorkEquiplano(false);
     setWorkMzTech(false);
-    setWorkWlabs(false);
-    setWorkExosfera(false);
+    setWorkAlterdata(false);
+    setWorkZeroEmissionsWorld(false);
     setWorkLeroyMerlin(false);
     setMeo(true);
   };
-  const handleGtGroup = () => {
-    setWorkGtGroup(true);
+  const handleGrownt = () => {
+    setWorkGrownt(true);
     setWorkEquiplano(false);
     setWorkMzTech(false);
-    setWorkWlabs(false);
-    setWorkExosfera(false);
+    setWorkAlterdata(false);
+    setWorkZeroEmissionsWorld(false);
     setWorkLeroyMerlin(false);
     setMeo(false);
   };
 
   const handleEquiplano = () => {
-    setWorkGtGroup(false);
+    setWorkGrownt(false);
     setWorkEquiplano(true);
     setWorkMzTech(false);
-    setWorkWlabs(false);
-    setWorkExosfera(false);
+    setWorkAlterdata(false);
+    setWorkZeroEmissionsWorld(false);
     setWorkLeroyMerlin(false);
     setMeo(false);
   };
 
   const handleMzTech = () => {
-    setWorkGtGroup(false);
+    setWorkGrownt(false);
     setWorkEquiplano(false);
     setWorkMzTech(true);
-    setWorkWlabs(false);
-    setWorkExosfera(false);
+    setWorkAlterdata(false);
+    setWorkZeroEmissionsWorld(false);
     setWorkLeroyMerlin(false);
     setMeo(false);
   };
 
-  const handleWlabs = () => {
-    setWorkGtGroup(false);
+  const handleAlterdata = () => {
+    setWorkGrownt(false);
     setWorkEquiplano(false);
     setWorkMzTech(false);
-    setWorkWlabs(true);
-    setWorkExosfera(false);
+    setWorkAlterdata(true);
+    setWorkZeroEmissionsWorld(false);
     setWorkLeroyMerlin(false);
     setMeo(false);
   };
 
-  const handleExosfera = () => {
-    setWorkGtGroup(false);
+  const handleZeroEmissionsWorld = () => {
+    setWorkGrownt(false);
     setWorkEquiplano(false);
     setWorkMzTech(false);
-    setWorkWlabs(false);
-    setWorkExosfera(true);
+    setWorkAlterdata(false);
+    setWorkZeroEmissionsWorld(true);
     setWorkLeroyMerlin(false);
     setMeo(false);
   };
 
   const handleLeroyMerlin = () => {
-    setWorkGtGroup(false);
+    setWorkGrownt(false);
     setWorkEquiplano(false);
     setWorkMzTech(false);
-    setWorkWlabs(false);
-    setWorkExosfera(false);
+    setWorkAlterdata(false);
+    setWorkZeroEmissionsWorld(false);
     setWorkLeroyMerlin(true);
     setMeo(false);
   };
@@ -116,24 +116,24 @@ const Experience = () => {
               LeroyMerlin
             </li>
             <li
-              onClick={handleGtGroup}
+              onClick={handleGrownt}
               className={`${
-                workGtGroup
+                workGrownt
                   ? "border-l-textGreen text-textGreen bg-hoverColor"
                   : "border-l-textDark/30 text-textDark"
               } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
             >
-              GtGroup
+              Grownt
             </li>
             <li
-              onClick={handleExosfera}
+              onClick={handleZeroEmissionsWorld}
               className={`${
-                workExosfera
+                workZeroEmissionsWorld
                   ? "border-l-textGreen text-textGreen bg-hoverColor"
                   : "border-l-textDark/30 text-textDark"
               } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
             >
-              Exosfera
+              Zero Emissions World
             </li>
             <li
               onClick={handleEquiplano}
@@ -146,14 +146,14 @@ const Experience = () => {
               Equiplano
             </li>
             <li
-              onClick={handleWlabs}
+              onClick={handleAlterdata}
               className={`${
-                workWlabs
+                workAlterdata
                   ? "border-l-textGreen text-textGreen bg-hoverColor"
                   : "border-l-textDark/30 text-textDark"
               } border-l-2 md:border-l-2 border-b-2 md:border-b-0 bg-transparent hover:bg-hoverColor py-3 sm:py-4 text-sm sm:text-base cursor-pointer duration-300 px-4 sm:px-6 md:px-8 font-medium whitespace-nowrap transition-all`}
             >
-              WLabs
+              Alterdata
             </li>
             <li
               onClick={handleMzTech}
@@ -170,10 +170,10 @@ const Experience = () => {
         <div className="w-full md:w-1/2 p-2 sm:p-4 mt-4 md:mt-0">
           {meo && <Meo />}
           {workLeroyMerlin && <LeroyMerlin />}
-          {workGtGroup && <GtGroup />}
-          {workExosfera && <Exosfera />}
+          {workGrownt && <Grownt />}
+          {workZeroEmissionsWorld && <ZeroEmissionsWorld />}
           {workEquiplano && <Equiplano />}
-          {workWlabs && <Wlabs />}
+          {workAlterdata && <Alterdata />}
           {workMzTech && <MzTech />}
         </div>
       </div>
