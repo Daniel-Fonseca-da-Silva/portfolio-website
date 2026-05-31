@@ -30,7 +30,7 @@ The primary objectives of this portfolio website are:
    - DafonCV (SaaS platform for CV generation)
    - Dafon Website (Corporate landing page)
 
-3. **Experience Documentation**: Present detailed work experience across multiple companies (GT Group, Equiplano, MzTech, Wlabs, Exosfera, Leroy Merlin).
+3. **Experience Documentation**: Present detailed work experience across multiple companies (Grownt, Equiplano, MzTech, Wlabs, Exosfera, Leroy Merlin).
 
 4. **Contact & Networking**: Provide multiple channels for professional contact and networking opportunities.
 
@@ -101,7 +101,7 @@ portfolio-website/
 │   └── works/              # Work experience detail components
 │       ├── Equiplano.tsx
 │       ├── Exosfera.tsx
-│       ├── GtGroup.tsx
+│       ├── Grownt.tsx
 │       ├── LeroyMerlin.tsx
 │       ├── MzTech.tsx
 │       └── Wlabs.tsx
@@ -143,7 +143,7 @@ graph TD
     D --> L[SubFooter]
     
     H --> M[Work Components]
-    M --> N[GtGroup]
+    M --> N[Grownt]
     M --> O[Equiplano]
     M --> P[MzTech]
     M --> Q[Wlabs]
@@ -349,5 +349,5 @@ This project is private and proprietary.
 
 ---
 
-Built with ❤️ using Next.js, React, and TypeScript
+Built with ❤️ using Next.js, React and TypeScript
 
