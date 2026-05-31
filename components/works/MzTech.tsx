@@ -10,25 +10,33 @@ const MzTech = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
-        Back
-        <span className="text-textGreen tracking-wide">Software Developer</span>
+        Back-end
+        <span className="text-textGreen tracking-wide">Developer</span>
       </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">Feb 2016 - Oct 2019</p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          As a Back-end Developer at MzTech, I specialized in creating MVP and SaaS software for national and international markets. I worked extensively on a drone surveillance project for the American market, focusing on aerial protection systems.
-
-          My responsibilities included developing and maintaining the back-end layer, ensuring application efficiency and security. I collaborated with Designers and Business Analysts to deliver high-quality solutions that met client requirements.
+          At MzTech I helped ship MVP and SaaS products for national and international clients, working with design and business so each release was something teams could launch and operate with confidence, not just code handed over.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          Key Projects:
-          &apos;Sindical TR&apos; Led the migration of a legacy PHP system to a modern Java/Spring Boot solution syndicate, including development of new feature, implementation of enhanced security measures and ongoing maintenance and post-migration optimization, architecture modernization to microservices.
+          Sindical TR: A digital platform for a workers&apos; syndicate, replacing an aging system with one that supports new member services, stronger protection of sensitive data, and stable day to day operations. The client gained a product they could keep selling and extending instead of fighting a brittle legacy tool.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          US Drone Surveillance: An MVP for aerial monitoring and protection aimed at the United States market. The product had to turn drone feeds into trustworthy information that security and operations teams could act on, proving the concept for a new market without overpromising beyond what the first release could deliver.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Together, these engagements show how MzTech packaged software as market-ready products: modernizing an institutional client, opening a path in the US with a focused MVP, and repeating the SaaS playbook across borders.
         </li>
       </ul>
     </motion.div>

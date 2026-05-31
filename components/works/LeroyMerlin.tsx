@@ -11,10 +11,10 @@ const LeroyMerlin = () => {
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
         System Architect
+        <span className="text-textGreen tracking-wide">
+          (Backend Engineer → System Architect)
+        </span>
       </h3>
-      <p className="text-sm md:text-lg mt-1 font-medium text-textDark">
-        Dec 2024 - Jul 2025
-      </p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
