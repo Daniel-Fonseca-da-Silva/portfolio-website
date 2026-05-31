@@ -44,7 +44,7 @@ const ZeroEmissionsWorld = () => {
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          Zero Emissions World stands as a platform asset that sustains the organisation's mission: the more efficiently resources flow from donor to cause, the greater the social impact the company can deliver and the faster it can grow.
+          Zero Emissions World stands as a platform asset that sustains the organisation&apos;s mission: the more efficiently resources flow from donor to cause, the greater the social impact the company can deliver and the faster it can grow.
         </li>
       </ul>
     </motion.div>
