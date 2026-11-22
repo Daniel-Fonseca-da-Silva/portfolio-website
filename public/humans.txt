@@ -4,12 +4,12 @@
 # TEAM
     Developer: Daniel Fonseca da Silva
     Role: Systems Architect, Founder & CTO at Dafon
-    Site: https://www.daniel-fonseca.online
+    Site: https://www.danielfonsecadasilva.dev
     Contact: dafondeveloper@gmail.com
     Location: Lisbon, Portugal
 
 # SITES — Dafon Ecosystem
-    Portfolio: https://www.daniel-fonseca.online
+    Portfolio: https://www.danielfonsecadasilva.dev
     Company: https://www.dafon.online
     DafonCV: https://www.dafoncv.com
     TechCuisine: https://www.techcuisine.online

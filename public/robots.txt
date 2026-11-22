@@ -93,4 +93,4 @@ Disallow: /
 Contact: dafondeveloper@gmail.com
 
 # Sitemap
-Sitemap: https://www.daniel-fonseca.online/sitemap.xml
+Sitemap: https://www.danielfonsecadasilva.dev/sitemap.xml

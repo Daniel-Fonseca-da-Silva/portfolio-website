@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://www.daniel-fonseca.online';
+export const SITE_URL = 'https://www.danielfonsecadasilva.dev';
 
 export const ECOSYSTEM_SITES = {
   portfolio: SITE_URL,
