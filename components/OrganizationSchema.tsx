@@ -15,11 +15,18 @@ const OrganizationSchema = () => {
         "@type": "Person",
         "@id": PERSON_ID,
         "name": "Daniel Fonseca da Silva",
+        "alternateName": ["Daniel Fonseca", "Daniel Fonseca da Silva Software Engineer"],
         "url": SITE_URL,
         "image": `${SITE_URL}/assets/images/Daniel_Fonseca_da_Silva_Professional.jpg`,
-        "jobTitle": ["Systems Architect", "Full Stack Developer", "CTO"],
+        "jobTitle": [
+          "Full-Stack Software Engineer",
+          "Software Developer",
+          "Full-Cycle Engineer",
+          "Systems Architect",
+          "CTO",
+        ],
         "description":
-          "Systems Architect and Full Stack Developer with 10+ years building cloud-native platforms on AWS. Enterprise experience at MEO Altice and Leroy Merlin. Founder & CTO at Dafon Online.",
+          "Full-Stack Software Engineer and Full-Cycle Developer with 10+ years building cloud-native, high-availability systems with Java, Spring Boot, Go, Next.js and AWS. Enterprise experience at MEO Altice and Leroy Merlin. Founder & CTO at Dafon.",
         "email": "dafondeveloper@gmail.com",
         "address": {
           "@type": "PostalAddress",
@@ -68,7 +75,12 @@ const OrganizationSchema = () => {
         "url": ECOSYSTEM_SITES.company,
         "logo": `${ECOSYSTEM_SITES.company}/logo.png`,
         "description":
-          "Innovative solutions company delivering transformative technology services across Europe and South America",
+          "Software development company delivering full-stack, cloud-native and AI-powered products and services for clients in Europe, the United States and Brazil",
+        "areaServed": [
+          { "@type": "Place", "name": "Europe" },
+          { "@type": "Country", "name": "United States" },
+          { "@type": "Country", "name": "Brazil" },
+        ],
         "founder": { "@id": PERSON_ID },
         "address": [
           {

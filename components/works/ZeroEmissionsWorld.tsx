@@ -10,9 +10,8 @@ const ZeroEmissionsWorld = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
-        Cloud Architect
         <span className="text-textGreen tracking-wide">
-          (Lead Developer)
+          (Full-Cycle Engineer)
         </span>
       </h3>
 <ul className="mt-6 flex flex-col gap-3">
@@ -45,6 +44,66 @@ const ZeroEmissionsWorld = () => {
             <TbArrowForwardUp />
           </span>
           Zero Emissions World stands as a platform asset that sustains the organisation&apos;s mission: the more efficiently resources flow from donor to cause, the greater the social impact the company can deliver and the faster it can grow.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Architected and developed a scalable Spring Boot back end of RESTful microservices for real-time donation processing, asynchronous job scheduling and user notifications, focused on high performance and low latency.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Designed and optimized data pipelines with SQL Server and PL/SQL, including relational data modeling and stored procedures.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Managed ACID-compliant financial transactions and ETL workflows that aggregate project metadata and user activity across regions, preserving global data integrity and traceability.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Engineered a responsive, accessible Angular portal integrated with secure REST APIs for international donors and local NGOs, prioritizing security and performance.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Implemented CI/CD automation with GitLab and Kubernetes, with automated testing, rollback strategies and zero-downtime releases across environments.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Collaborated with teams across multiple time zones in Scrum, running stand-ups, sprint planning and rigorous code reviews.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Troubleshot data-transformation performance issues, distributed-system bottlenecks and API reliability problems.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Designed the cloud architecture on AWS, with IAM for access control, EC2 and EKS for compute and Kubernetes workloads, and ELB for traffic distribution.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Built serverless components with AWS Lambda and data stores on RDS, DynamoDB and S3.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Explored generative AI features with Amazon Bedrock.
         </li>
       </ul>
     </motion.div>

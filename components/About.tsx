@@ -14,13 +14,14 @@ const About = () => {
       <div className="flex flex-col lg:flex-row gap-8 sm:gap-12 lg:gap-16">
         <div className="w-full lg:w-2/3 text-base sm:text-lg text-textDark font-normal flex flex-col gap-4 sm:gap-6">
           <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-textGreen mt-2 sm:mt-4 mb-3 sm:mb-4">
-            Software Engineer & Architect
+            Engineer for major European and American enterprises.
           </h3>
+          
           <p>
             For more than ten years I have designed and scaled{" "}
             <span className="text-textGreen">high-availability systems</span> from the ground up. At enterprise companies such as{" "}
-            <span className="text-textGreen">MEO Altice</span> and <span className="text-textGreen">Leroy Merlin</span>, I turn demanding business problems into dependable{" "}
-            <span className="text-textGreen">cloud-native platforms on AWS</span> backed by{" "}
+            <span className="text-textGreen">MEO Altice</span> and <span className="text-textGreen">Leroy Merlin Adeo</span>, I turn demanding business problems into dependable{" "}
+            <span className="text-textGreen">cloud-native platforms on GCP, AWS</span> backed by{" "}
             <span className="text-textGreen">well-designed REST APIs</span>. I also build{" "}
             <span className="text-textGreen">projects from scratch</span> when companies need ideas turned into{" "}
             <span className="text-textGreen">complete, scalable systems</span> ready for production.
@@ -28,21 +29,21 @@ const About = () => {
           <p>
             I cover the <span className="text-textGreen">full delivery cycle</span>:{" "}
             <span className="text-textGreen">architecture</span>, <span className="text-textGreen">secure development</span>,{" "}
-            <span className="text-textGreen">DevOps</span>, and production. My stack includes{" "}
+            <span className="text-textGreen">DevOps</span> and production. My stack includes{" "}
             <span className="text-textGreen">Go</span>, <span className="text-textGreen">Python</span>,{" "}
-            <span className="text-textGreen">Java</span>, <span className="text-textGreen">microservices</span>, and{" "}
+            <span className="text-textGreen">Java</span>, <span className="text-textGreen">microservices</span> and{" "}
             <span className="text-textGreen">REST APIs</span>. I connect existing systems with{" "}
             <span className="text-textGreen">AI agents</span> so teams ship faster without losing{" "}
             <span className="text-textGreen">stability</span>. For messaging and async workflows I work with{" "}
-            <span className="text-textGreen">RabbitMQ</span> and <span className="text-textGreen">Google Pub/Sub</span>, and I use{" "}
-            <span className="text-textGreen">Supabase</span> when a secure backend with auth, storage, and real-time data helps the product ship faster.
+            <span className="text-textGreen">RabbitMQ</span> and <span className="text-textGreen">GCP Pub/Sub</span> and I use{" "}
+            <span className="text-textGreen">Supabase</span> when a secure backend with auth, storage and real-time data helps the product ship faster.
           </p>
           <p>
             As <span className="text-textGreen">Founder and CTO of Dafon Online</span>, I lead as a{" "}
             <span className="text-textGreen">technical leader</span> who turns{" "}
             <span className="text-textGreen">business challenges</span> into digital products built to last. My approach combines{" "}
             <span className="text-textGreen">robust system architecture</span>,{" "}
-            <span className="text-textGreen">agile methodologies (Scrum, Kanban)</span>, and{" "}
+            <span className="text-textGreen">agile methodologies (Scrum, Kanban)</span> and{" "}
             <span className="text-textGreen">DevOps practices</span> to deliver solutions that support{" "}
             <span className="text-textGreen">sustainable growth</span> for organizations.
           </p>
@@ -51,7 +52,7 @@ const About = () => {
               <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              <span>Golang, Python, Java</span>
+              <span>Java, Golang, Python</span>
             </li>
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
               <span className="text-textGreen text-lg">
@@ -87,13 +88,13 @@ const About = () => {
               <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              <span>RabbitMQ, Google Pub/Sub, SQS, SNS</span>
+              <span>RabbitMQ, Kafka, Pub/Sub, SQS, SNS</span>
             </li>
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
               <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              <span>PostgreSQL, Supabase, MySQL, Redis, MongoDB</span>
+              <span>PostgreSQL, MySQL, S3, Redis, MongoDB</span>
             </li>
             <li className="flex items-center gap-3 p-2 rounded-lg hover:bg-hoverColor transition-colors duration-300">
               <span className="text-textGreen text-lg">
@@ -105,7 +106,7 @@ const About = () => {
               <span className="text-textGreen text-lg">
                 <IoIosCafe />
               </span>
-              <span>AWS, Docker/Kubernetes, Terraform</span>
+              <span>AWS, GCP, Docker/Kubernetes, Terraform</span>
             </li>
           </ul>
         </div>
@@ -125,7 +126,7 @@ const About = () => {
                   fill
                   className="rounded-xl object-cover object-center"
                   src={profileImg}
-                  alt="Daniel Fonseca - Software Engineer & Architect"
+                  alt="Daniel Fonseca da Silva- Full-Cycle Engineer"
                   sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-textGreen/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

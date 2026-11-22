@@ -6,14 +6,14 @@ const Banner = () => {
       id="home"
       className="max-w-contentContainer mx-auto py-8 sm:py-10 md:py-16 lg:py-24 flex flex-col gap-3 sm:gap-4 lg:gap-8 px-4 sm:px-6 md:px-10 lg:px-4"
     >
-      <motion.h3
+      <motion.p
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         className="text-sm sm:text-base md:text-lg font-titleFont tracking-wide text-textGreen font-medium"
       >
         Hello, I&apos;m
-      </motion.h3>
+      </motion.p>
       <motion.h1
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -21,8 +21,9 @@ const Banner = () => {
         className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-titleFont font-bold flex flex-col leading-tight"
       >
         <span className="gradient-text">Daniel Fonseca</span>
+        <span className="gradient-text">da Silva</span>
         <span className="text-textLight mt-2 sm:mt-3 lg:mt-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold">
-          Software Engineer & Architect
+          Full-Cycle Engineer
         </span>
       </motion.h1>
       <motion.div
@@ -32,20 +33,20 @@ const Banner = () => {
         className="text-base sm:text-lg md:max-w-[700px] text-textDark font-normal leading-relaxed mt-4 sm:mt-6 flex flex-col gap-4"
       >
         <p>
-          For more than ten years I have designed and scaled high-availability systems from the ground up. At enterprise companies such as MEO Altice and Leroy Merlin, I turn demanding business problems into dependable cloud-native platforms on AWS, backed by well-designed REST APIs.
+          Strategic full-cycle Engineer with 10 years of experience specializing in high-availability distributed systems, Cloud-Native architecture and AI-driven engineering. Proven track record of designing API orchestrations and high-performance, Java-based microservices that run reliably at scale in production for major European and American enterprises.
         </p>
         <p>
-          I own the full delivery cycle: architecture, secure development, DevOps, and production. I also connect your existing systems with AI agents so integrations stay practical and teams move faster without giving up stability. Go, Python, microservices, REST APIs, and event-driven messaging with RabbitMQ are where I do my strongest work.
+          I started my career in infrastructure, providing me with systemic thinking and the technical maturity to deeply understand the business context of a feature before designing the technical solution. Today, I thrive in fast-moving environments, actively leveraging AI-assisted development tools to accelerate delivery without compromising quality.
         </p>
         <p>
-          As Founder and CTO of Dafon Online, I lead engineering and product delivery with the same focus I bring to client work: clear priorities, solid architecture, and digital products built to grow with the business.{" "}
-          <a href="https://www.linkedin.com/in/daniel-fonseca-da-silva/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="text-textGreen hover:text-textGreenHover transition-colors duration-300 inline-flex items-center gap-1 group">
-            <span className="relative">
-              Know more
-              <span className="absolute w-full h-[2px] bg-gradient-to-r from-textGreen to-accentBlue left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
-            </span>
-          </a>
+          Education & Legal Status: Academic Qualification: Bachelor&apos;s Degree in Information Systems, officially recognized in Portugal / EU by the University of Minho (Final Grade: 16/20).
         </p>
+        <a href="https://www.linkedin.com/in/daniel-d-silva/?skipRedirect=true" target="_blank" rel="noopener noreferrer" className="text-textGreen hover:text-textGreenHover transition-colors duration-300 inline-flex items-center gap-1 group">
+          <span className="relative overflow-hidden">
+            Know more
+            <span className="absolute w-full h-[2px] bg-gradient-to-r from-textGreen to-accentBlue left-0 bottom-0 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500"></span>
+          </span>
+        </a>
       </motion.div>
       <motion.div
         initial={{ y: 10, opacity: 0 }}

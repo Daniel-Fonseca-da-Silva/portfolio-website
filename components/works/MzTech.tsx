@@ -10,8 +10,7 @@ const MzTech = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-sm md:text-lg xl:text-lg font-titleFont">
-        Back-end
-        <span className="text-textGreen tracking-wide">Developer</span>
+        <span className="text-textGreen tracking-wide">(Software Engineer)</span>
       </h3>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
@@ -24,19 +23,55 @@ const MzTech = () => {
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          Sindical TR: A digital platform for a workers&apos; syndicate, replacing an aging system with one that supports new member services, stronger protection of sensitive data, and stable day to day operations. The client gained a product they could keep selling and extending instead of fighting a brittle legacy tool.
+          Specialized in MVP and SaaS software for global markets, including a US drone based aerial surveillance project.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          US Drone Surveillance: An MVP for aerial monitoring and protection aimed at the United States market. The product had to turn drone feeds into trustworthy information that security and operations teams could act on, proving the concept for a new market without overpromising beyond what the first release could deliver.
+          Built backend applications in Java (8+), Java EE and Spring Boot, applying backend service design principles, Maven and Lombok.
         </li>
         <li className="text-base flex gap-2 sm:text-sm text-textDark">
           <span className="text-textGreen mt-1">
             <TbArrowForwardUp />
           </span>
-          Together, these engagements show how MzTech packaged software as market-ready products: modernizing an institutional client, opening a path in the US with a focused MVP, and repeating the SaaS playbook across borders.
+          Modernized legacy PHP code to Java / Spring Boot microservices, cutting server response time by 20% through JVM tuning and Spring Data optimization.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Designed relational databases (Oracle, PostgreSQL) with Redis caching, working with business analysts and product owners to translate requirements into solutions.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Containerized applications with Docker, supported CI/CD pipelines and version control with Git, and handled deployments and production stability.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Ensured code quality through unit testing, code reviews, and development standards using JUnit and Mockito. Took part in agile ceremonies (sprint planning, reviews, retrospectives) under Scrum, Kanban and XP.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Sindical TR: Led modernization and migration of a legacy PHP syndicate system to Java / Spring Boot microservices, adding new features and security improvements.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          US Drone Surveillance (MVP): Developed backend services for a drone aerial surveillance platform, ensuring reliable data processin.
+        </li>
+        <li className="text-base flex gap-2 sm:text-sm text-textDark">
+          <span className="text-textGreen mt-1">
+            <TbArrowForwardUp />
+          </span>
+          Together, these engagements show how MzTech packaged software as market-ready products: modernizing an institutional client, opening a path in the US with a focused MVP and repeating the SaaS playbook across borders.
         </li>
       </ul>
     </motion.div>
