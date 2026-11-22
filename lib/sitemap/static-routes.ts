@@ -5,6 +5,7 @@ export const PROJECT_SLUGS = [
   'microservices-platform',
   'e-commerce-solution',
   'banking-api',
+  'autocronica',
 ] as const;
 
 export const SKILL_SLUGS = [

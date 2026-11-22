@@ -2,7 +2,7 @@ import {dafonCvBanner, techcuisineBanner, dafonBanner } from "@/public/assets";
 import SectiontTitle from "./SectiontTitle";
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub, BsLinkedin, BsGlobeAmericas } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsGlobeAmericas, BsGooglePlay } from "react-icons/bs";
 
 const Projects = () => {
   return (
@@ -10,6 +10,67 @@ const Projects = () => {
       <SectiontTitle title="Projects created" titleNo="03" />
       <div className="w-full flex flex-col items-center justify-between gap-12 sm:gap-16 md:gap-20 lg:gap-28 mt-6 sm:mt-8 md:mt-10">
         {/* Project 1 */}
+        <div className="w-full flex flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20 lg:gap-28 mt-6 sm:mt-8 md:mt-10">
+          <div className="flex flex-col xl:flex-row gap-6">
+            <a
+              className="w-full xl:w-1/2 h-auto relative group"
+              href="https://www.autocronica.autos"
+              target="_blank"
+            >
+              <div>
+                <Image
+                  className="w-full h-full object-contain"
+                  src="/assets/images/slug/auto-cronica-banner.png"
+                  width={1672}
+                  height={941}
+                  alt="Auto Crónica banner image"
+                />
+              </div>
+            </a>
+            <div className="w-full xl:w-1/2 flex flex-col gap-4 sm:gap-6 lg:justify-between items-start xl:items-end text-left xl:text-right xl:-ml-16 z-10 mt-4 xl:mt-0">
+              <p className="font-titleFont text-textGreen text-xs sm:text-sm tracking-wide">
+                SaaS
+              </p>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Auto Crónica</h3>
+              <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
+                Chronic reliability by vehicle model. Pick a make, model, year and engine and see what typically fails: severity, typical mileage, sources, step-by-step fixes and community reviews. A Next.js web app and a Flutter Android app share one NestJS API, with a separate FastAPI service generating AI content that is always labelled as indicative.
+              </p>
+              <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Next.js</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">NestJS</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">FastAPI</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Flutter</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">PostgreSQL</li>
+                <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Redis</li>
+              </ul>
+              <div className="text-xl sm:text-2xl flex gap-3 sm:gap-4">
+                <a
+                  className="hover:text-textGreen duration-300"
+                  href="https://www.autocronica.autos"
+                  target="_blank"
+                  aria-label="Auto Crónica website"
+                >
+                  <BsGlobeAmericas />
+                </a>
+                <a
+                  className="hover:text-textGreen duration-300"
+                  href="https://play.google.com/store/apps/details?id=com.autocronica.carfaults"
+                  target="_blank"
+                  aria-label="Auto Crónica on Google Play"
+                >
+                  <BsGooglePlay />
+                </a>
+              </div>
+              <Link
+                href="/projects/autocronica"
+                className="text-sm text-textGreen hover:text-textGreenHover transition-colors duration-300 underline underline-offset-4"
+              >
+                View project details →
+              </Link>
+            </div>
+          </div>
+        </div>
+        {/* Project 2 */}
         <div className="w-full flex flex-col items-center justify-center gap-12 sm:gap-16 md:gap-20 lg:gap-28 mt-6 sm:mt-8 md:mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
             <a
@@ -63,7 +124,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* Project 2 */}
+        {/* Project 3 */}
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
             <a
@@ -126,7 +187,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* Project 3 */}
+        {/* Project 4 */}
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
             <a
@@ -148,7 +209,7 @@ const Projects = () => {
               </p>
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-textLight mb-2">Dafon</h3>
               <p className="glass text-sm sm:text-base md:text-lg p-4 sm:p-6 md:p-8 rounded-xl leading-relaxed">
-              We build modern software solutions powered by AI and cloud. The Dafon corporate site is the digital front door for a company that delivers scalable, secure systems — web apps, mobile, enterprise platforms, and APIs — with agile delivery and end-to-end support from idea to launch.
+              We build modern software solutions powered by AI and cloud. The Dafon corporate site is the digital front door for a company that delivers scalable, secure systems web apps, mobile, enterprise platforms and APIs with agile delivery and end-to-end support from idea to launch.
               </p>
               <ul className="text-sm sm:text-base font-titleFont tracking-wide flex flex-wrap gap-3 sm:gap-4 md:gap-5 text-textDark">
                 <li className="px-3 py-1 rounded-full bg-hoverColor border border-textGreen/20">Next</li>

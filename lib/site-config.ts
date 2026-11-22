@@ -5,4 +5,5 @@ export const ECOSYSTEM_SITES = {
   company: 'https://www.dafon.online',
   dafoncv: 'https://www.dafoncv.com',
   techcuisine: 'https://www.techcuisine.online',
+  autocronica: 'https://www.autocronica.autos',
 } as const;
