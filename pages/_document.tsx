@@ -19,6 +19,9 @@ export default function Document() {
           rel="stylesheet"
         />
         
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="wF4ABd8Oy3XEDqtmKaKZhBjzCDfntmPW0LYULaMgycM" />
+
         {/* Theme Color */}
         <meta name="theme-color" content="#0a192f" />
         
