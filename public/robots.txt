@@ -5,8 +5,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_next/static/
-Disallow: /_next/image
 Disallow: /_next/webpack-hmr
 
 # Allow public assets
