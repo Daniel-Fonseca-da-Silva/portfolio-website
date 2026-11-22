@@ -5,6 +5,8 @@ interface SEOProps {
   title?: string;
   description?: string;
   image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   url?: string;
   keywords?: string;
   type?: string;
@@ -12,16 +14,21 @@ interface SEOProps {
   jsonLd?: object | object[];
 }
 
-const DEFAULT_TITLE = "Daniel Fonseca da Silva | Systems Architect & Full Stack Developer";
+const DEFAULT_IMAGE_WIDTH = 1424;
+const DEFAULT_IMAGE_HEIGHT = 752;
+
+const DEFAULT_TITLE = "Daniel Fonseca da Silva | Full-Stack Software Engineer";
 const DEFAULT_DESCRIPTION =
-  "Systems Architect and Full Stack Developer with 10+ years building cloud-native platforms on AWS. Enterprise experience at MEO Altice and Leroy Merlin. Founder & CTO at Dafon Online.";
+  "Full-Stack Software Engineer and Full-Cycle Developer with 10+ years building cloud-native, high-availability systems with Java, Spring Boot, Go, Next.js and AWS for enterprises in Europe, the US and Brazil.";
 const DEFAULT_KEYWORDS =
-  "Daniel Fonseca da Silva, Systems Architect, Full Stack Developer, Software Engineer, Golang, Next.js, TypeScript, AWS, Docker, Dafon, DafonCV, TechCuisine, Portugal, Lisbon, SaaS founder, Cloud Architecture, Microservices";
+  "software developer, full-stack developer, full-stack engineer, full-cycle engineer, full-cycle developer, software engineer, Java developer, Spring Boot developer, Golang developer, Next.js developer, TypeScript, AWS cloud engineer, Kubernetes, microservices, SaaS, Daniel Fonseca da Silva, Portugal, Lisbon, Europe, United States, Brazil";
 
 const SEO = ({
   title = DEFAULT_TITLE,
   description = DEFAULT_DESCRIPTION,
-  image = `${SITE_URL}/assets/images/open-graph-daniel.png`,
+  image = `${SITE_URL}/assets/images/daniel-fonseca-da-silva-open-graph.png`,
+  imageWidth = DEFAULT_IMAGE_WIDTH,
+  imageHeight = DEFAULT_IMAGE_HEIGHT,
   url = SITE_URL,
   keywords = DEFAULT_KEYWORDS,
   type = "website",
@@ -42,7 +49,14 @@ const SEO = ({
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
-      <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
+      <meta
+        name="robots"
+        content={
+          noindex
+            ? "noindex, nofollow"
+            : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+        }
+      />
       <meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow"} />
 
       {/* Canonical URL */}
@@ -54,8 +68,8 @@ const SEO = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={fullImageUrl} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
+      <meta property="og:image:width" content={String(imageWidth)} />
+      <meta property="og:image:height" content={String(imageHeight)} />
       <meta property="og:image:alt" content={`${title} — Open Graph image`} />
       <meta property="og:site_name" content="Daniel Fonseca da Silva — Portfolio" />
       <meta property="og:locale" content="en_US" />
